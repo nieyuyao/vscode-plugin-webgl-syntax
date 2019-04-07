@@ -10,17 +10,11 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.WebglSyntaxPlugin",
+		"onLanguage:javascript",
+		"onLanguage:typescript"
 	],
 	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
@@ -28,6 +22,9 @@
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
+	"keywords": [
+		"webgl"
+	],
 	"devDependencies": {
 		"typescript": "^3.3.1",
 		"vscode": "^1.1.28",

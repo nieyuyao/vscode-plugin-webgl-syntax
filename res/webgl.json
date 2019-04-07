@@ -1,0 +1,581 @@
+[{
+    "desc": "The WebGLRenderingContext.canvas property is a read-only reference to the HTMLCanvasElement or OffscreenCanvas object that is associated with the context. It might be null if it is not associated with a <canvas> element or an OffscreenCanvas object.",
+    "syntax": "gl.canvas;",
+    "returnVal": "Either a HTMLCanvasElement or OffscreenCanvas object or null.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/canvas"
+}, {
+    "desc": "The WebGLRenderingContext.commit() method pushes frames back to the original HTMLCanvasElement, if the context is not directly fixed to a specific canvas.",
+    "syntax": "void WebGLRenderingContext.commit()",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/commit"
+}, {
+    "desc": "The read-only WebGLRenderingContext.drawingBufferWidth property represents the actual width of the current drawing buffer. It should match the width attribute of the <canvas> element associated with this context, but might differ if the implementation is not able to provide the requested width.",
+    "syntax": "gl.drawingBufferWidth;",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawingBufferWidth"
+}, {
+    "desc": "The read-only WebGLRenderingContext.drawingBufferHeight property represents the actual height of the current drawing buffer. It should match the height attribute of the <canvas> element associated with this context, but might differ if the implementation is not able to provide the requested height.",
+    "syntax": "gl.drawingBufferHeight;",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawingBufferHeight"
+}, {
+    "desc": "The WebGLRenderingContext.getContextAttributes() method returns a WebGLContextAttributes object that contains the actual context parameters. Might return null, if the context is lost.",
+    "syntax": "gl.getContextAttributes();",
+    "returnVal": "A WebGLContextAttributes object that contains the actual context parameters, or null if the context is lost.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getContextAttributes"
+}, {
+    "desc": "The WebGLRenderingContext.isContextLost() method returns a Boolean indicating whether or not the WebGL context has been lost.",
+    "syntax": "gl.isContextLost();",
+    "returnVal": "A Boolean. True if the context is lost, false otherwise.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost"
+}, {
+    "desc": "The WebGLRenderingContext.scissor() method of the WebGL API sets a scissor box, which limits the drawing to a specified rectangle.",
+    "syntax": "void gl.scissor(x, y, width, height);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/scissor"
+}, {
+    "desc": "The WebGLRenderingContext.viewport() method of the WebGL API sets the viewport, which specifies the affine transformation of x and y from normalized device coordinates to window coordinates.",
+    "syntax": "void gl.viewport(x, y, width, height);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/viewport"
+}, {
+    "desc": "The WebGLRenderingContext.activeTexture() method of the WebGL API specifies which texture unit to make active.",
+    "syntax": "void gl.activeTexture(texture);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/activeTexture"
+}, {
+    "desc": "The WebGLRenderingContext.blendColor() method of the WebGL API is used to set the source and destination blending factors.",
+    "syntax": "void gl.blendColor(red, green, blue, alpha);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendColor"
+}, {
+    "desc": "The WebGLRenderingContext.blendEquation() method of the WebGL API is used to set both the RGB blend equation and alpha blend equation to a single equation.",
+    "syntax": "void gl.blendEquation(mode);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendEquation"
+}, {
+    "desc": "The WebGLRenderingContext.blendEquationSeparate() method of the WebGL API is used to set the RGB blend equation and alpha blend equation separately.",
+    "syntax": "void gl.blendEquationSeparate(modeRGB, modeAlpha);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendEquationSeparate"
+}, {
+    "desc": "The WebGLRenderingContext.blendFunc() method of the WebGL API defines which function is used for blending pixel arithmetic.",
+    "syntax": "void gl.blendFunc(sfactor, dfactor);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendFunc"
+}, {
+    "desc": "The WebGLRenderingContext.blendFuncSeparate() method of the WebGL API defines which function is used for blending pixel arithmetic for RGB and alpha components separately.",
+    "syntax": "void gl.blendFuncSeparate(srcRGB, dstRGB, srcAlpha, dstAlpha);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendFuncSeparate"
+}, {
+    "desc": "The WebGLRenderingContext.clearColor() method of the WebGL API specifies the color values used when clearing color buffers.",
+    "syntax": "void gl.clearColor(red, green, blue, alpha);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearColor"
+}, {
+    "desc": "The WebGLRenderingContext.clearDepth() method of the WebGL API specifies the clear value for the depth buffer.",
+    "syntax": "void gl.clearDepth(depth);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearDepth"
+}, {
+    "desc": "The WebGLRenderingContext.clearStencil() method of the WebGL API specifies the clear value for the stencil buffer.",
+    "syntax": "void gl.clearStencil(s);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearStencil"
+}, {
+    "desc": "The WebGLRenderingContext.colorMask() method of the WebGL API sets which color components to enable or to disable when drawing or rendering to a WebGLFramebuffer.",
+    "syntax": "void gl.colorMask(red, green, blue, alpha);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/colorMask"
+}, {
+    "desc": "The WebGLRenderingContext.cullFace() method of the WebGL API specifies whether or not front- and/or back-facing polygons can be culled.",
+    "syntax": "void gl.cullFace(mode);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/cullFace"
+}, {
+    "desc": "The WebGLRenderingContext.depthFunc() method of the WebGL API specifies a function that compares incoming pixel depth to the current depth buffer value.",
+    "syntax": "void gl.depthFunc(func);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthFunc"
+}, {
+    "desc": "The WebGLRenderingContext.depthMask() method of the WebGL API sets whether writing into the depth buffer is enabled or disabled.",
+    "syntax": "void gl.depthMask(flag);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthMask"
+}, {
+    "desc": "The WebGLRenderingContext.depthRange() method of the WebGL API specifies the depth range mapping from normalized device coordinates to window or viewport coordinates.",
+    "syntax": "void gl.depthRange(zNear, zFar);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthRange"
+}, {
+    "desc": "The WebGLRenderingContext.disable() method of the WebGL API disables specific WebGL capabilities for this context.",
+    "syntax": "void gl.disable(cap);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/disable"
+}, {
+    "desc": "The WebGLRenderingContext.enable() method of the WebGL API enables specific WebGL capabilities for this context.",
+    "syntax": "void gl.enable(cap);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/enable"
+}, {
+    "desc": "The WebGLRenderingContext.frontFace() method of the WebGL API specifies whether polygons are front- or back-facing by setting a winding orientation.",
+    "syntax": "void gl.frontFace(mode);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/frontFace"
+}, {
+    "desc": "The WebGLRenderingContext.getParameter() method of the WebGL API returns a value for the passed parameter name.",
+    "syntax": "any gl.getParameter(pname);\n",
+    "returnVal": "Depends on the parameter.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getParameter"
+}, {
+    "desc": "The WebGLRenderingContext.getError() method of the WebGL API returns error information.",
+    "syntax": "GLenum gl.getError();\n",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getError"
+}, {
+    "desc": "The WebGLRenderingContext.hint() method of the WebGL API specifies hints for certain behaviors. The interpretation of these hints depend on the implementation.",
+    "syntax": "void gl.hint(target, mode);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/hint"
+}, {
+    "desc": "The WebGLRenderingContext.isEnabled() method of the WebGL API tests whether a specific WebGL capability is enabled or not for this context.",
+    "syntax": "GLboolean gl.isEnabled(cap);\n",
+    "returnVal": "A GLboolean indicating if the capability cap is enabled (true), or not (false).",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isEnabled"
+}, {
+    "desc": "The WebGLRenderingContext.lineWidth() method of the WebGL API sets the line width of rasterized lines.",
+    "syntax": "void gl.lineWidth(width);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/lineWidth"
+}, {
+    "desc": "The WebGLRenderingContext.pixelStorei() method of the WebGL API specifies the pixel storage modes.",
+    "syntax": "void gl.pixelStorei(pname, param);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/pixelStorei"
+}, {
+    "desc": "The WebGLRenderingContext.polygonOffset() method of the WebGL API specifies the scale factors and units to calculate depth values.",
+    "syntax": "void gl.polygonOffset(factor, units);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/polygonOffset"
+}, {
+    "desc": "The WebGLRenderingContext.sampleCoverage() method of the WebGL API specifies multi-sample coverage parameters for anti-aliasing effects.",
+    "syntax": "void gl.sampleCoverage(value, invert);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/sampleCoverage"
+}, {
+    "desc": "The WebGLRenderingContext.stencilFunc() method of the WebGL API sets the front and back function and reference value for stencil testing.",
+    "syntax": "void gl.stencilFunc(func, ref, mask);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilFunc"
+}, {
+    "desc": "The WebGLRenderingContext.stencilFuncSeparate() method of the WebGL API sets the front and/or back function and reference value for stencil testing.",
+    "syntax": "void gl.stencilFuncSeparate(face, func, ref, mask);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate"
+}, {
+    "desc": "The WebGLRenderingContext.stencilMask() method of the WebGL API controls enabling and disabling of both the front and back writing of individual bits in the stencil planes.",
+    "syntax": "void gl.stencilMask(mask);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilMask"
+}, {
+    "desc": "The WebGLRenderingContext.stencilMaskSeparate() method of the WebGL API controls enabling and disabling of front and/or back writing of individual bits in the stencil planes.",
+    "syntax": "void gl.stencilMaskSeparate(face, mask);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate"
+}, {
+    "desc": "The WebGLRenderingContext.stencilOp() method of the WebGL API sets both the front and back-facing stencil test actions.",
+    "syntax": "void gl.stencilOp(fail, zfail, zpass);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilOp"
+}, {
+    "desc": "The WebGLRenderingContext.stencilOpSeparate() method of the WebGL API sets the front and/or back-facing stencil test actions.",
+    "syntax": "void gl.stencilOpSeparate(face, fail, zfail, zpass);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilOpSeparate"
+}, {
+    "desc": "The WebGLRenderingContext.bindBuffer() method of the WebGL API binds a given WebGLBuffer to a target.",
+    "syntax": "void gl.bindBuffer(target, buffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindBuffer"
+}, {
+    "desc": "The WebGLRenderingContext.bufferData() method of the WebGL API initializes and creates the buffer object's data store.",
+    "syntax": "// WebGL1: \nvoid gl.bufferData(target, size, usage); \nvoid gl.bufferData(target, ArrayBuffer? srcData, usage); \nvoid gl.bufferData(target, ArrayBufferView srcData, usage); \n\n// WebGL2: \nvoid gl.bufferData(target, ArrayBufferView srcData, usage, srcOffset, length);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData"
+}, {
+    "desc": "The WebGLRenderingContext.bufferSubData() method of the WebGL API updates a subset of a buffer object's data store.",
+    "syntax": "// WebGL1: \nvoid gl.bufferSubData(target, offset, ArrayBuffer srcData); \nvoid gl.bufferSubData(target, offset, ArrayBufferView srcData); \n\n// WebGL2: \nvoid gl.bufferSubData(target, dstByteOffset, ArrayBufferView srcData, srcOffset, length);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData"
+}, {
+    "desc": "The WebGLRenderingContext.createBuffer() method of the WebGL API creates and initializes a WebGLBuffer storing data such as vertices or colors.",
+    "syntax": "WebGLBuffer gl.createBuffer();\n",
+    "returnVal": "A WebGLBuffer storing data such as vertices or colors.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer"
+}, {
+    "desc": "The WebGLRenderingContext.deleteBuffer() method of the WebGL API deletes a given WebGLBuffer. This method has no effect if the buffer has already been deleted.",
+    "syntax": "void gl.deleteBuffer(buffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteBuffer"
+}, {
+    "desc": "The WebGLRenderingContext.getBufferParameter() method of the WebGL API returns information about the buffer.",
+    "syntax": "any gl.getBufferParameter(target, pname);\n",
+    "returnVal": "Depends on the requested information (as specified with pname). Either a GLint or a GLenum.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getBufferParameter"
+}, {
+    "desc": "The WebGLRenderingContext.isBuffer() method of the WebGL API returns true if the passed WebGLBuffer is valid and false otherwise.",
+    "syntax": "GLboolean gl.isBuffer(buffer);\n",
+    "returnVal": "A GLboolean indicating whether or not the buffer is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isBuffer"
+}, {
+    "desc": "The WebGLRenderingContext.bindFramebuffer() method of the WebGL API binds a given WebGLFramebuffer to a target.",
+    "syntax": "void gl.bindFramebuffer(target, framebuffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer"
+}, {
+    "desc": "The WebGLRenderingContext.checkFramebufferStatus() method of the WebGL API returns the completeness status of the WebGLFramebuffer object.",
+    "syntax": "GLenum gl.checkFramebufferStatus(target);\n",
+    "returnVal": "A GLenum indicating the completeness status of the framebuffer or 0 if an error occurs. Possible enum return values:",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus"
+}, {
+    "desc": "The WebGLRenderingContext.createFramebuffer() method of the WebGL API creates and initializes a WebGLFramebuffer object.",
+    "syntax": "WebGLFramebuffer gl.createFramebuffer();\n",
+    "returnVal": "A WebGLFramebuffer object.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createFramebuffer"
+}, {
+    "desc": "The WebGLRenderingContext.deleteFramebuffer() method of the WebGL API deletes a given WebGLFramebuffer object. This method has no effect if the frame buffer has already been deleted.",
+    "syntax": "void gl.deleteFramebuffer(framebuffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteFramebuffer"
+}, {
+    "desc": "The WebGLRenderingContext.framebufferRenderbuffer() method of the WebGL API attaches a WebGLRenderbuffer object to a WebGLFramebuffer object.",
+    "syntax": "void gl.framebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer"
+}, {
+    "desc": "The WebGLRenderingContext.framebufferTexture2D() method of the WebGL API attaches a texture to a WebGLFramebuffer.",
+    "syntax": "void gl.framebufferTexture2D(target, attachment, textarget, texture, level);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/framebufferTexture2D"
+}, {
+    "desc": "The WebGLRenderingContext.getFramebufferAttachmentParameter() method of the WebGL API returns information about a framebuffer's attachment.",
+    "syntax": "any gl.getFramebufferAttachmentParameter(target, attachment, pname);\n",
+    "returnVal": "Depends on the requested information (as specified with pname). Either a GLint, a GLenum, a WebGLRenderbuffer, or a WebGLTexture.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter"
+}, {
+    "desc": "The WebGLRenderingContext.isFramebuffer() method of the WebGL API returns true if the passed WebGLFramebuffer is valid and false otherwise.",
+    "syntax": "GLboolean gl.isFramebuffer(framebuffer);\n",
+    "returnVal": "A GLboolean indicating whether or not the frame buffer is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isFramebuffer"
+}, {
+    "desc": "The WebGLRenderingContext.readPixels() method of the WebGL API reads a block of pixels from a specified rectangle of the current color framebuffer into an ArrayBufferView object.",
+    "syntax": "// WebGL1: \nvoid gl.readPixels(x, y, width, height, format, type, pixels); \n\n// WebGL2: \nvoid gl.readPixels(x, y, width, height, format, type, GLintptr offset); \nvoid gl.readPixels(x, y, width, height, format, type, ArrayBufferView pixels, GLuint dstOffset);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/readPixels"
+}, {
+    "desc": "The WebGLRenderingContext.bindRenderbuffer() method of the WebGL API binds a given WebGLRenderbuffer to a target, which must be gl.RENDERBUFFER.",
+    "syntax": "void gl.bindRenderbuffer(target, renderbuffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindRenderbuffer"
+}, {
+    "desc": "The WebGLRenderingContext.createRenderbuffer() method of the WebGL API creates and initializes a WebGLRenderbuffer object.",
+    "syntax": "WebGLRenderbuffer gl.createRenderbuffer();\n",
+    "returnVal": "A WebGLRenderbuffer object that stores data such an image, or can be source or target of an rendering operation.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createRenderbuffer"
+}, {
+    "desc": "The WebGLRenderingContext.deleteRenderbuffer() method of the WebGL API deletes a given WebGLRenderbuffer object. This method has no effect if the render buffer has already been deleted.",
+    "syntax": "void gl.deleteRenderbuffer(renderbuffer);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer"
+}, {
+    "desc": "The WebGLRenderingContext.getRenderbufferParameter() method of the WebGL API returns information about the renderbuffer.",
+    "syntax": "any gl.getRenderbufferParameter(target, pname);\n",
+    "returnVal": "Depends on the requested information (as specified with pname). Either a GLint or a GLenum.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter"
+}, {
+    "desc": "The WebGLRenderingContext.isRenderbuffer() method of the WebGL API returns true if the passed WebGLRenderbuffer is valid and false otherwise.",
+    "syntax": "GLboolean gl.isRenderbuffer(renderbuffer);\n",
+    "returnVal": "A GLboolean indicating whether or not the renderbuffer is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isRenderbuffer"
+}, {
+    "desc": "The WebGLRenderingContext.renderbufferStorage() method of the WebGL API creates and initializes a renderbuffer object's data store.",
+    "syntax": "void gl.renderbufferStorage(target, internalFormat, width, height);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/renderbufferStorage"
+}, {
+    "desc": "The WebGLRenderingContext.bindTexture() method of the WebGL API binds a given WebGLTexture to a target (binding point).",
+    "syntax": "void gl.bindTexture(target, texture);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindTexture"
+}, {
+    "desc": "The WebGLRenderingContext.compressedTexImage2D()  and WebGL2RenderingContext.compressedTexImage3D() methods of the WebGL API specify a two- or three-dimensional texture image in a compressed format.",
+    "syntax": "// WebGL 1:\nvoid gl.compressedTexImage2D(target, level, internalformat, width, height, border, ArrayBufferView? pixels);\n\n// Additionally available in WebGL 2: \n// read from buffer bound to gl.PIXEL_UNPACK_BUFFER\nvoid gl.compressedTexImage2D(target, level, internalformat, width, height, border, GLsizei imageSize, GLintptr offset); \nvoid gl.compressedTexImage2D(target, level, internalformat, width, height, border,\n                             ArrayBufferView srcData, optional srcOffset, optional srcLengthOverride);\n\n // read from buffer bound to gl.PIXEL_UNPACK_BUFFER\nvoid gl.compressedTexImage3D(target, level, internalformat, width, height, depth, border, GLsizei imageSize, GLintptr offset); \nvoid gl.compressedTexImage3D(target, level, internalformat, width, height, depth, border, \n                             ArrayBufferView srcData, optional srcOffset, optional srcLengthOverride);",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.compressedTexSubImage2D() method of the WebGL API specifies a two-dimensional sub-rectangle for a texture image in a compressed format.",
+    "syntax": "// WebGL 1:\nvoid gl.compressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, ArrayBufferView? pixels);\n\n// Additionally available in WebGL 2:\nvoid gl.compressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, offset); \nvoid gl.compressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, ArrayBufferView srcData, optional srcOffset, optional srcLengthOverride);\n\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.copyTexImage2D() method of the WebGL API copies pixels from the current WebGLFramebuffer into a 2D texture image.",
+    "syntax": "void gl.copyTexImage2D(target, level, internalformat, x, y, width, height, border);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/copyTexImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.copyTexSubImage2D() method of the WebGL API copies pixels from the current WebGLFramebuffer into an existing 2D texture sub-image.",
+    "syntax": "void gl.copyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.createTexture() method of the WebGL API creates and initializes a WebGLTexture object.",
+    "syntax": "WebGLTexture gl.createTexture();\n",
+    "returnVal": "A WebGLTexture object to which images can be bound to.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createTexture"
+}, {
+    "desc": "The WebGLRenderingContext.deleteTexture() method of the WebGL API deletes a given WebGLTexture object. This method has no effect if the texture has already been deleted.",
+    "syntax": "void gl.deleteTexture(texture);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteTexture"
+}, {
+    "desc": "The WebGLRenderingContext.generateMipmap() method of the WebGL API generates a set of mipmaps for a WebGLTexture object.",
+    "syntax": "void gl.generateMipmap(target);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/generateMipmap"
+}, {
+    "desc": "The WebGLRenderingContext.getTexParameter() method of the WebGL API returns information about the given texture.",
+    "syntax": "any gl.getTexParameter(target, pname);\n",
+    "returnVal": "Returns the requested texture information (as specified with pname). If an error occurs, null is returned.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getTexParameter"
+}, {
+    "desc": "The WebGLRenderingContext.isTexture() method of the WebGL API returns true if the passed WebGLTexture is valid and false otherwise.",
+    "syntax": "GLboolean gl.isTexture(texture);\n",
+    "returnVal": "A GLboolean indicating whether or not the texture is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isTexture"
+}, {
+    "desc": "The WebGLRenderingContext.texImage2D() method of the WebGL API specifies a two-dimensional texture image.",
+    "syntax": "// WebGL1:\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, ArrayBufferView? pixels);\nvoid gl.texImage2D(target, level, internalformat, format, type, ImageData? pixels);\nvoid gl.texImage2D(target, level, internalformat, format, type, HTMLImageElement? pixels);\nvoid gl.texImage2D(target, level, internalformat, format, type, HTMLCanvasElement? pixels);\nvoid gl.texImage2D(target, level, internalformat, format, type, HTMLVideoElement? pixels);\nvoid gl.texImage2D(target, level, internalformat, format, type, ImageBitmap? pixels);\n\n// WebGL2:\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, GLintptr offset);\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, HTMLCanvasElement source);\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, HTMLImageElement source); \nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, HTMLVideoElement source); \nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, ImageBitmap source);\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, ImageData source);\nvoid gl.texImage2D(target, level, internalformat, width, height, border, format, type, ArrayBufferView srcData, srcOffset);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.texSubImage2D() method of the WebGL API specifies a sub-rectangle of the current texture.",
+    "syntax": "// WebGL 1:\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, ArrayBufferView? pixels);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, ImageData? pixels);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, HTMLImageElement? pixels);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, HTMLCanvasElement? pixels);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, HTMLVideoElement? pixels);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, ImageBitmap? pixels);\n\n// WebGL 2:\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, format, type, GLintptr offset);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, HTMLCanvasElement source);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, HTMLImageElement source);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, HTMLVideoElement source); \nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, ImageBitmap source); \nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, ImageData source);\nvoid gl.texSubImage2D(target, level, xoffset, yoffset, width, height, format, type, ArrayBufferView srcData, srcOffset);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D"
+}, {
+    "desc": "The WebGLRenderingContext.texParameter[fi]() methods of the WebGL API set texture parameters.",
+    "syntax": "void gl.texParameterf(GLenum target, GLenum pname, GLfloat param);\nvoid gl.texParameteri(GLenum target, GLenum pname, GLint param);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texParameter"
+}, {
+    "desc": "The WebGLRenderingContext.texParameter[fi]() methods of the WebGL API set texture parameters.",
+    "syntax": "void gl.texParameterf(GLenum target, GLenum pname, GLfloat param);\nvoid gl.texParameteri(GLenum target, GLenum pname, GLint param);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texParameter"
+}, {
+    "desc": "The WebGLRenderingContext.attachShader() method of the WebGL API attaches either a fragment or vertex WebGLShader to a WebGLProgram.",
+    "syntax": "void gl.attachShader(program, shader);\n",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/attachShader"
+}, {
+    "desc": "The WebGLRenderingContext.bindAttribLocation() method of the WebGL API binds a generic vertex index to an attribute variable.",
+    "syntax": "void gl.bindAttribLocation(program, index, name);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindAttribLocation"
+}, {
+    "desc": "The WebGLRenderingContext.compileShader() method of the WebGL API compiles a GLSL shader into binary data so that it can be used by a WebGLProgram.",
+    "syntax": "void gl.compileShader(shader);\n",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compileShader"
+}, {
+    "desc": "The WebGLRenderingContext.createProgram() method of the WebGL API creates and initializes a WebGLProgram object.",
+    "syntax": "WebGLProgram gl.createProgram();\n",
+    "returnVal": "A WebGLProgram object that is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). These are then linked into a usable program..",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createProgram"
+}, {
+    "desc": "The WebGLRenderingContext.createShader() method of the WebGL API creates a WebGLShader that can then be configured further using WebGLRenderingContext.shaderSource() and WebGLRenderingContext.compileShader().",
+    "syntax": "WebGLShader gl.createShader(type);\n",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createShader"
+}, {
+    "desc": "The WebGLRenderingContext.deleteProgram() method of the WebGL API deletes a given WebGLProgram object. This method has no effect if the program has already been deleted.",
+    "syntax": "void gl.deleteProgram(program);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteProgram"
+}, {
+    "desc": "The WebGLRenderingContext.deleteShader() method of the WebGL API marks a given WebGLShader object for deletion. It will then be deleted whenever the shader is no longer in use. This method has no effect if the shader has already been deleted, and the WebGLShader is automatically marked for deletion when it is destroyed by the garbage collector.",
+    "syntax": "void gl.deleteShader(shader);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteShader"
+}, {
+    "desc": "The WebGLRenderingContext.detachShader() method of the WebGL API detaches a previously attached WebGLShader from a WebGLProgram.",
+    "syntax": "void gl.detachShader(program, shader);\n",
+    "returnVal": "",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/detachShader"
+}, {
+    "desc": "The WebGLRenderingContext.getAttachedShaders() method of the WebGL API returns a list of WebGLShader objects attached to a WebGLProgram.",
+    "syntax": "sequence<WebGLShader> gl.getAttachedShaders(program);\n",
+    "returnVal": "An Array of WebGLShader objects that are attached to the given WebGLProgram.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getAttachedShaders"
+}, {
+    "desc": "The WebGLRenderingContext.getProgramParameter() method of the WebGL API returns information about the given program.",
+    "syntax": "any gl.getProgramParameter(program, pname);\n",
+    "returnVal": "Returns the requested program information (as specified with pname).",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getProgramParameter"
+}, {
+    "desc": "The WebGLRenderingContext.getProgramInfoLog returns the information log for the specified WebGLProgram object. It contains errors that occurred during failed linking or validation of WebGLProgram objects.",
+    "syntax": "gl.getProgramInfoLog(program);",
+    "returnVal": "A DOMString that contains diagnostic messages, warning messages, and other information about the last linking or validation operation. When a WebGLProgram object is initially created, its information log will be a string of length 0.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getProgramInfoLog"
+}, {
+    "desc": "The WebGLRenderingContext.getShaderParameter() method of the WebGL API returns information about the given shader.",
+    "syntax": "any gl.getShaderParameter(shader, pname);\n",
+    "returnVal": "Returns the requested shader information (as specified with pname).",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderParameter"
+}, {
+    "desc": "The WebGLRenderingContext.getShaderPrecisionFormat() method of the WebGL API returns a new WebGLShaderPrecisionFormat object describing the range and precision for the specified shader numeric format.",
+    "syntax": "WebGLShaderPrecisionFormat gl.getShaderPrecisionFormat(shaderType, precisionType);\n",
+    "returnVal": "A WebGLShaderPrecisionFormat object or null, if an error occurs.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat"
+}, {
+    "desc": "The WebGLRenderingContext.getShaderInfoLog returns the information log for the specified WebGLShader object. It contains warnings, debugging and compile information.",
+    "syntax": "gl.getShaderInfoLog(shader);",
+    "returnVal": "A DOMString that contains diagnostic messages, warning messages, and other information about the last compile operation. When a WebGLShader object is initially created, its information log will be a string of length 0.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderInfoLog"
+}, {
+    "desc": "The WebGLRenderingContext.getShaderSource() method of the WebGL API returns the source code of a WebGLShader as a DOMString.",
+    "syntax": "DOMString gl.getShaderSource(shader);\n",
+    "returnVal": "A DOMString containing the source code of the shader.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderSource"
+}, {
+    "desc": "The WebGLRenderingContext.isProgram() method of the WebGL API returns true if the passed WebGLProgram is valid, false otherwise.",
+    "syntax": "GLboolean gl.isProgram(program);\n",
+    "returnVal": "A GLboolean indicating whether or not the program is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isProgram"
+}, {
+    "desc": "The WebGLRenderingContext.isShader() method of the WebGL API returns true if the passed WebGLShader is valid, false otherwise.",
+    "syntax": "GLboolean gl.isShader(shader);\n",
+    "returnVal": "A GLboolean indicating whether or not the shader is valid.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isShader"
+}, {
+    "desc": "The WebGLRenderingContext.linkProgram() method of the WebGL API links a given WebGLProgram to the attached vertex and fragment shaders.",
+    "syntax": "void gl.linkProgram(program);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/linkProgram"
+}, {
+    "desc": "The WebGLRenderingContext.shaderSource() method of the WebGL API sets the source code of a WebGLShader.",
+    "syntax": "void gl.shaderSource(shader, source);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/shaderSource"
+}, {
+    "desc": "The WebGLRenderingContext.useProgram() method of the WebGL API sets the specified WebGLProgram as part of the current rendering state.",
+    "syntax": "void gl.useProgram(program);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/useProgram"
+}, {
+    "desc": "The WebGLRenderingContext.validateProgram() method of the WebGL API validates a WebGLProgram. It checks if it is successfully linked and if it can be used in the current WebGL state.",
+    "syntax": "void gl.validateProgram(program);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/validateProgram"
+}, {
+    "desc": "The WebGLRenderingContext.disableVertexAttribArray() method of the WebGL API turns the generic vertex attribute array off at a given index position.",
+    "syntax": "void gl.disableVertexAttribArray(index);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray"
+}, {
+    "desc": "The WebGLRenderingContext method enableVertexAttribArray(), part of the WebGL API, turns on the generic vertex attribute array at the specified index into the list of attribute arrays.",
+    "syntax": "void gl.enableVertexAttribArray(index);\n",
+    "returnVal": "undefined.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray"
+}, {
+    "desc": "The WebGLRenderingContext.getActiveAttrib() method of the WebGL API returns a WebGLActiveInfo object containing size, type, and name of a vertex attribute. It is generally used when querying unknown uniforms either for debugging or generic library creation.",
+    "syntax": "WebGLActiveInfo gl.getActiveAttrib(program,index);\n",
+    "returnVal": "A WebGLActiveInfo object.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveAttrib"
+}, {
+    "desc": "The WebGLRenderingContext.getActiveUniform() method of the WebGL API returns a WebGLActiveInfo object containing size, type, and name of a uniform attribute. It is generally used when querying unknown uniforms either for debugging or generic library creation.",
+    "syntax": "WebGLActiveInfo WebGLRenderingContext.getActiveUniform(program, index);\n",
+    "returnVal": "A WebGLActiveInfo object describing the uniform.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform"
+}, {
+    "desc": "The WebGLRenderingContext.getAttribLocation() method of the WebGL API returns the location of an attribute variable in a given WebGLProgram.",
+    "syntax": "GLint gl.getAttribLocation(program, name);\n",
+    "returnVal": "A GLint number indicating the location of the variable name if found. Returns -1 otherwise.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getAttribLocation"
+}, {
+    "desc": "The WebGLRenderingContext.getUniform() method of the WebGL API returns the value of a uniform variable at a given location.",
+    "syntax": "any gl.getUniform(program, location);\n",
+    "returnVal": "The returned type depends on the uniform type:",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getUniform"
+}, {
+    "desc": "Part of the WebGL API, the WebGLRenderingContext method getUniformLocation() returns the location of a specific uniform variable which is part of a given WebGLProgram. The uniform variable is returned as a WebGLUniformLocation object, which is an opaque identifier used to specify where in the GPU's memory that uniform variable is located.",
+    "syntax": "WebGLUniformLocation = WebGLRenderingContext.getUniformLocation(program, name);\n",
+    "returnVal": "A WebGLUniformLocation value indicating the location of the named variable, if it exists. If the specified variable doesn't exist, null is returned instead.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getUniformLocation"
+}, {
+    "desc": "The WebGLRenderingContext.getVertexAttrib() method of the WebGL API returns information about a vertex attribute at a given position.",
+    "syntax": "any gl.getVertexAttrib(index, pname);\n",
+    "returnVal": "Returns the requested vertex attribute information (as specified with pname).",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getVertexAttrib"
+}, {
+    "desc": "The WebGLRenderingContext.getVertexAttribOffset() method of the WebGL API returns the address of a specified vertex attribute.",
+    "syntax": "GLintptr gl.getVertexAttribOffset(index, pname);\n",
+    "returnVal": "A GLintptr indicating the address of the vertex attribute.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset"
+}, {
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniform"
+}, {
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "returnVal": "undefined",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix"
+}, {
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttrib"
+}, {
+    "desc": "The WebGLRenderingContext.vertexAttribPointer() method of the WebGL API binds the buffer currently bound to gl.ARRAY_BUFFER to a generic vertex attribute of the current vertex buffer object and specifies its layout.",
+    "syntax": "void gl.vertexAttribPointer(index, size, type, normalized, stride, offset);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer"
+}, {
+    "desc": "The WebGLRenderingContext.clear() method of the WebGL API clears buffers to preset values.",
+    "syntax": "void gl.clear(mask);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear"
+}, {
+    "desc": "The WebGLRenderingContext.drawArrays() method of the WebGL API renders primitives from array data.",
+    "syntax": "void gl.drawArrays(mode, first, count);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawArrays"
+}, {
+    "desc": "The WebGLRenderingContext.drawElements() method of the WebGL API renders primitives from array data.",
+    "syntax": "void gl.drawElements(mode, count, type, offset);\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements"
+}, {
+    "desc": "The WebGLRenderingContext.finish() method of the WebGL API blocks execution until all previously called commands are finished.",
+    "syntax": "void gl.finish();\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/finish"
+}, {
+    "desc": "The WebGLRenderingContext.flush() method of the WebGL API empties different buffer commands, causing all commands to be executed as quickly as possible.",
+    "syntax": "void gl.flush();\n",
+    "returnVal": "None.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/flush"
+}, {
+    "desc": "The WebGLRenderingContext.getSupportedExtensions() method returns a list of all the supported WebGL extensions.",
+    "syntax": "gl.getSupportedExtensions();",
+    "returnVal": "An Array of strings with all the supported WebGL extensions.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getSupportedExtensions"
+}, {
+    "desc": "The WebGLRenderingContext.getExtension() method enables a WebGL extension.",
+    "syntax": "gl.getExtension(name);",
+    "returnVal": "A WebGL extension object, or null if name does not match (case-insensitive) to one of the strings in WebGLRenderingContext.getSupportedExtensions.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getExtension"
+}]
