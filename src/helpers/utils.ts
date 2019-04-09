@@ -1,8 +1,10 @@
-import { TextDocument, Position, MarkdownString, Range } from 'vscode';
-import { Attr } from '../helpers/attr';
-import { Component } from './component';
-const components:Component[] = require('../../res/webgl.json');
-const attrRegExp = /(?:^|\s*|\{|\,)(gl\.[0-9a-zA-Z]+)(?:$|\,|;|\}|\s*|\()/g;
+import { TextDocument, Position, MarkdownString, CompletionItem } from 'vscode';
+import { Prop } from './prop';
+import { Attr } from './attr';
+import { Constant } from './constant';
+const attrs:Attr[] = require('../../res/webgl.attrs.json');
+const constants:Constant[] = require('../../res/webgl.constants.json');
+const attrRegExp = /(?:^|\s*|\{|\,)gl\.([0-9a-zA-Z_]+)(?:$|\,|;|\}|\s*|\()/g;
 const descRegExp = /(^|\s*)(WebGLRenderingContext\.[0-9a-zA-Z\(\)]+)(\s*)/g;
 const htmlTagRegExp = /<[^<>]+>/g;
 
@@ -18,10 +20,10 @@ function code(content:string) {
 function htmlTag(tag:string) {
     return `\`${tag}\``;
 }
-function paramMark(paramName:string, desc:string) {
-    return `*@param* -\`${paramName}\`.${desc}  \n`;
+function paramMark(type:string, paramName:string, desc:string = '') {
+    return `*@${type}* -\`${paramName}\`.${desc}  \n`;
 }
-export function getAttr(doc: TextDocument, position: Position): Attr {
+export function getProp(doc: TextDocument, position: Position): Prop {
     const line = position.line; //行号
     const character = position.character; //光标的位置
     let lineText = doc.lineAt(line).text; //行文本
@@ -35,28 +37,42 @@ export function getAttr(doc: TextDocument, position: Position): Attr {
         }
         return raw;
     });
-    return new Attr(attrName, isHover);
+    return new Prop(attrName, isHover);
 }
 
-export function getComponent(attr:Attr) {
-    let comp:Component | undefined;
-    if (!attr.name) {
+export function getAttrComponent(prop:Prop) {
+    let comp:Attr | undefined;
+    if (!prop.name) {
         return;
     }
-    components.find(c => {
-        if (c.syntax.indexOf(attr.name) > -1) {
-            comp = c;
+    attrs.find(attr => {
+        if (attr.name === prop.name) {
+            comp = attr;
         }
         return !!comp;
     });
     return comp;
 }
 
-export function swapMarkDown(comp:Component | undefined):MarkdownString {
+export function getConstantComponent(prop:Prop) {
+    let cst:Constant | undefined;
+    if (!prop.name) {
+        return;
+    }
+    constants.find(c => {
+        if (c.name === prop.name) {
+            cst = c;
+        }
+        return !!cst;
+    });
+    return cst;
+}
+
+export function swapAttrComponentMarkDown(comp:Attr | undefined):MarkdownString {
     if (comp === undefined) {
         return new MarkdownString('');
     }
-    const {desc, syntax, returnVal, url, params } = comp;
+    const { desc, syntax, returnVal, url, params } = comp;
     let markString:string = '';
     markString = desc.replace(descRegExp, (raw:string, pre:string, segment:string, post:string) => {
         return pre + bold(segment) + post;
@@ -68,13 +84,58 @@ export function swapMarkDown(comp:Component | undefined):MarkdownString {
     markString += code(syntax);
     markString += '  \n';
     params.forEach(param => {
-        markString += paramMark(param.paramName, param.desc);
+        markString += paramMark('param', param.paramName, param.desc);
     });
-    markString += `*@return* ${returnVal}`;
+    markString += paramMark('return', returnVal);
     markString += '  \n';
     const linkUrl = `https://${url}`;
     markString += link(linkUrl, linkUrl);
     let markDownString = new MarkdownString(markString);
     markDownString.isTrusted = true;
     return markDownString;
+}
+
+export function swapConstantComponentMarkDown(comp:Constant | undefined):MarkdownString {
+    if (comp === undefined) {
+        return new MarkdownString('');
+    }
+    const { name, value, desc, url } = comp;
+    let markString:string = '';
+    markString += desc;
+    markString += '  \n';
+    markString += code(name);
+    markString += '  \n';
+    markString += paramMark('value', value);
+    const linkUrl = `https://${url}`;
+    markString += link(linkUrl, linkUrl);
+    let markDownString = new MarkdownString(markString);
+    markDownString.isTrusted = true;
+    return markDownString;
+}
+
+export function getCompleteProps(inputVal:string):Array<string> {
+    return [];
+}
+
+export function getInputVal(doc:TextDocument, pos:Position):string {
+    let val:string = '';
+    let isGl:boolean = false;
+    const line = pos.line;
+    const character = pos.character;
+    const lineText = doc.lineAt(line).text;
+    for (var i = character;i >= 0; i--) {
+        let char = lineText.charAt(i);
+        if (char === '.') {
+            val = char + val;
+            break;
+        }
+    }
+    if (lineText.substring(i-2, i) === 'gl') {
+        isGl = true;
+    }
+    return isGl ? val : '';
+}
+
+export function createCompleteItem(prop:string):CompletionItem {
+    return new CompletionItem(prop);
 }

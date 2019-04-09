@@ -1,4 +1,4 @@
-import { languages, DocumentSelector, ExtensionContext, DocumentFilter }  from 'vscode';
+import { languages, ExtensionContext, DocumentFilter }  from 'vscode';
 import HoverProviderPlugin from './providers/HoverProviderPlugin';
 import CompletionItemProviderPlugin from './providers/CompletionItemProviderPlugin';
 const jsSel: DocumentFilter = {

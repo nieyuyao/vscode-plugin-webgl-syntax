@@ -1,8 +1,12 @@
-export class Attr {
-    constructor(name:string, isHover:boolean) {
-        this.name = name;
-        this.isHover = isHover;
-    }
-    name: string = '';
-    isHover: boolean = false;
-}
+type param = {
+    paramName:string,
+    desc:string
+};
+export type Attr = {
+    name:string,
+    desc:string,
+    syntax:string,
+    returnVal:string,
+    url:string,
+    params:Array<param>
+};

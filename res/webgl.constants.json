@@ -1,0 +1,3076 @@
+[{
+    "name": "DEPTH_BUFFER_BIT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x00000100",
+    "desc": "Passed to clear to clear the current depth buffer."
+}, {
+    "name": "STENCIL_BUFFER_BIT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x00000400",
+    "desc": "Passed to clear to clear the current stencil buffer."
+}, {
+    "name": "COLOR_BUFFER_BIT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x00004000",
+    "desc": "Passed to clear to clear the current color buffer."
+}, {
+    "name": "POINTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0000",
+    "desc": "Passed to drawElements or drawArrays to draw single points."
+}, {
+    "name": "LINES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0001",
+    "desc": "Passed to drawElements or drawArrays to draw lines. Each vertex connects to the one after it."
+}, {
+    "name": "LINE_LOOP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0002",
+    "desc": "Passed to drawElements or drawArrays to draw lines. Each set of two vertices is treated as a separate line segment."
+}, {
+    "name": "LINE_STRIP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0003",
+    "desc": "Passed to drawElements or drawArrays to draw a connected group of line segments from the first vertex to the last."
+}, {
+    "name": "TRIANGLES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0004",
+    "desc": "Passed to drawElements or drawArrays to draw triangles. Each set of three vertices creates a separate triangle."
+}, {
+    "name": "TRIANGLE_STRIP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0005",
+    "desc": "Passed to drawElements or drawArrays to draw a connected group of triangles."
+}, {
+    "name": "TRIANGLE_FAN",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0006",
+    "desc": "Passed to drawElements or drawArrays to draw a connected group of triangles. Each vertex connects to the previous and the first vertex in the fan."
+}, {
+    "name": "ZERO",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0",
+    "desc": "Passed to blendFunc or blendFuncSeparate to turn off a component."
+}, {
+    "name": "ONE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "1",
+    "desc": "Passed to blendFunc or blendFuncSeparate to turn on a component."
+}, {
+    "name": "SRC_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0300",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by the source elements color."
+}, {
+    "name": "ONE_MINUS_SRC_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0301",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the source elements color."
+}, {
+    "name": "SRC_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0302",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by the source's alpha."
+}, {
+    "name": "ONE_MINUS_SRC_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0303",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the source's alpha."
+}, {
+    "name": "DST_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0304",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by the destination's alpha."
+}, {
+    "name": "ONE_MINUS_DST_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0305",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the destination's alpha."
+}, {
+    "name": "DST_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0306",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by the destination's color."
+}, {
+    "name": "ONE_MINUS_DST_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0307",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the destination's color."
+}, {
+    "name": "SRC_ALPHA_SATURATE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0308",
+    "desc": "Passed to blendFunc or blendFuncSeparate to multiply a component by the minimum of source's alpha or one minus the destination's alpha."
+}, {
+    "name": "CONSTANT_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8001",
+    "desc": "Passed to blendFunc or blendFuncSeparate to specify a constant color blend function."
+}, {
+    "name": "ONE_MINUS_CONSTANT_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8002",
+    "desc": "Passed to blendFunc or blendFuncSeparate to specify one minus a constant color blend function."
+}, {
+    "name": "CONSTANT_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8003",
+    "desc": "Passed to blendFunc or blendFuncSeparate to specify a constant alpha blend function."
+}, {
+    "name": "ONE_MINUS_CONSTANT_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8004",
+    "desc": "Passed to blendFunc or blendFuncSeparate to specify one minus a constant alpha blend function."
+}, {
+    "name": "FUNC_ADD",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8006",
+    "desc": "Passed to blendEquation or blendEquationSeparate to set an addition blend function."
+}, {
+    "name": "FUNC_SUBTRACT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x800A",
+    "desc": "Passed to blendEquation or blendEquationSeparate to specify a subtraction blend function (source - destination)."
+}, {
+    "name": "FUNC_REVERSE_SUBTRACT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x800B",
+    "desc": "Passed to blendEquation or blendEquationSeparate to specify a reverse subtraction blend function (destination - source)."
+}, {
+    "name": "BLEND_EQUATION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8009",
+    "desc": "Passed to getParameter to get the current RGB blend function."
+}, {
+    "name": "BLEND_EQUATION_RGB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8009",
+    "desc": "Passed to getParameter to get the current RGB blend function. Same as BLEND_EQUATION"
+}, {
+    "name": "BLEND_EQUATION_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x883D",
+    "desc": "Passed to getParameter to get the current alpha blend function. Same as BLEND_EQUATION"
+}, {
+    "name": "BLEND_DST_RGB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80C8",
+    "desc": "Passed to getParameter to get the current destination RGB blend function."
+}, {
+    "name": "BLEND_SRC_RGB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80C9",
+    "desc": "Passed to getParameter to get the current destination RGB blend function."
+}, {
+    "name": "BLEND_DST_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80CA",
+    "desc": "Passed to getParameter to get the current destination alpha blend function."
+}, {
+    "name": "BLEND_SRC_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80CB",
+    "desc": "Passed to getParameter to get the current source alpha blend function."
+}, {
+    "name": "BLEND_COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8005",
+    "desc": "Passed to getParameter to return a the current blend color."
+}, {
+    "name": "ARRAY_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8894",
+    "desc": "Passed to getParameter to get the array buffer binding."
+}, {
+    "name": "ELEMENT_ARRAY_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8895",
+    "desc": "Passed to getParameter to get the current element array buffer."
+}, {
+    "name": "LINE_WIDTH",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B21",
+    "desc": "Passed to getParameter to get the current lineWidth (set by the lineWidth method)."
+}, {
+    "name": "ALIASED_POINT_SIZE_RANGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x846D",
+    "desc": "Passed to getParameter to get the current size of a point drawn with gl.POINTS"
+}, {
+    "name": "ALIASED_LINE_WIDTH_RANGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x846E",
+    "desc": "Passed to getParameter to get the range of available widths for a line. Returns a length-2 array with the lo value at 0, and hight at 1."
+}, {
+    "name": "CULL_FACE_MODE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B45",
+    "desc": "Passed to getParameter to get the current value of cullFace. Should return FRONT, BACK, or FRONT_AND_BACK"
+}, {
+    "name": "FRONT_FACE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B46",
+    "desc": "Passed to getParameter to determine the current value of frontFace. Should return CW or CCW."
+}, {
+    "name": "DEPTH_RANGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B70",
+    "desc": "Passed to getParameter to return a length-2 array of floats giving the current depth range."
+}, {
+    "name": "DEPTH_WRITEMASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B72",
+    "desc": "Passed to getParameter to determine if the depth write mask is enabled."
+}, {
+    "name": "DEPTH_CLEAR_VALUE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B73",
+    "desc": "Passed to getParameter to determine the current depth clear value."
+}, {
+    "name": "DEPTH_FUNC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B74",
+    "desc": "Passed to getParameter to get the current depth function. Returns NEVER, ALWAYS, LESS, EQUAL, LEQUAL, GREATER, GEQUAL, or NOTEQUAL."
+}, {
+    "name": "STENCIL_CLEAR_VALUE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B91",
+    "desc": "Passed to getParameter to get the value the stencil will be cleared to."
+}, {
+    "name": "STENCIL_FUNC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B92",
+    "desc": "Passed to getParameter to get the current stencil function. Returns NEVER, ALWAYS, LESS, EQUAL, LEQUAL, GREATER, GEQUAL, or NOTEQUAL."
+}, {
+    "name": "STENCIL_FAIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B94",
+    "desc": "Passed to getParameter to get the current stencil fail function. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP."
+}, {
+    "name": "STENCIL_PASS_DEPTH_FAIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B95",
+    "desc": "Passed to getParameter to get the current stencil fail function should the depth buffer test fail. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP."
+}, {
+    "name": "STENCIL_PASS_DEPTH_PASS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B96",
+    "desc": "Passed to getParameter to get the current stencil fail function should the depth buffer test pass. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP."
+}, {
+    "name": "STENCIL_REF",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B97",
+    "desc": "Passed to getParameter to get the reference value used for stencil tests."
+}, {
+    "name": "STENCIL_VALUE_MASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B93",
+    "desc": " "
+}, {
+    "name": "STENCIL_WRITEMASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B98",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_FUNC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8800",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_FAIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8801",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_PASS_DEPTH_FAIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8802",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_PASS_DEPTH_PASS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8803",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_REF",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA3",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_VALUE_MASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA4",
+    "desc": " "
+}, {
+    "name": "STENCIL_BACK_WRITEMASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA5",
+    "desc": " "
+}, {
+    "name": "VIEWPORT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0BA2",
+    "desc": "Returns an Int32Array with four elements for the current viewport dimensions."
+}, {
+    "name": "SCISSOR_BOX",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0C10",
+    "desc": "Returns an Int32Array with four elements for the current scissor box dimensions."
+}, {
+    "name": "COLOR_CLEAR_VALUE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0C22",
+    "desc": " "
+}, {
+    "name": "COLOR_WRITEMASK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0C23",
+    "desc": " "
+}, {
+    "name": "UNPACK_ALIGNMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0CF5",
+    "desc": " "
+}, {
+    "name": "PACK_ALIGNMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D05",
+    "desc": " "
+}, {
+    "name": "MAX_TEXTURE_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D33",
+    "desc": " "
+}, {
+    "name": "MAX_VIEWPORT_DIMS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D3A",
+    "desc": " "
+}, {
+    "name": "SUBPIXEL_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D50",
+    "desc": " "
+}, {
+    "name": "RED_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D52",
+    "desc": " "
+}, {
+    "name": "GREEN_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D53",
+    "desc": " "
+}, {
+    "name": "BLUE_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D54",
+    "desc": " "
+}, {
+    "name": "ALPHA_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D55",
+    "desc": " "
+}, {
+    "name": "DEPTH_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D56",
+    "desc": " "
+}, {
+    "name": "STENCIL_BITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D57",
+    "desc": " "
+}, {
+    "name": "POLYGON_OFFSET_UNITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2A00",
+    "desc": " "
+}, {
+    "name": "POLYGON_OFFSET_FACTOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8038",
+    "desc": " "
+}, {
+    "name": "TEXTURE_BINDING_2D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8069",
+    "desc": " "
+}, {
+    "name": "SAMPLE_BUFFERS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80A8",
+    "desc": " "
+}, {
+    "name": "SAMPLES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80A9",
+    "desc": " "
+}, {
+    "name": "SAMPLE_COVERAGE_VALUE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80AA",
+    "desc": " "
+}, {
+    "name": "SAMPLE_COVERAGE_INVERT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80AB",
+    "desc": " "
+}, {
+    "name": "COMPRESSED_TEXTURE_FORMATS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x86A3",
+    "desc": " "
+}, {
+    "name": "VENDOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1F00",
+    "desc": " "
+}, {
+    "name": "RENDERER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1F01",
+    "desc": " "
+}, {
+    "name": "VERSION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1F02",
+    "desc": " "
+}, {
+    "name": "IMPLEMENTATION_COLOR_READ_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B9A",
+    "desc": " "
+}, {
+    "name": "IMPLEMENTATION_COLOR_READ_FORMAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B9B",
+    "desc": " "
+}, {
+    "name": "BROWSER_DEFAULT_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9244",
+    "desc": " "
+}, {
+    "name": "STATIC_DRAW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E4",
+    "desc": "Passed to bufferData as a hint about whether the contents of the buffer are likely to be used often and not change often."
+}, {
+    "name": "STREAM_DRAW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E0",
+    "desc": "Passed to bufferData as a hint about whether the contents of the buffer are likely to not be used often."
+}, {
+    "name": "DYNAMIC_DRAW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E8",
+    "desc": "Passed to bufferData as a hint about whether the contents of the buffer are likely to be used often and change often."
+}, {
+    "name": "ARRAY_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8892",
+    "desc": "Passed to bindBuffer or bufferData to specify the type of buffer being used."
+}, {
+    "name": "ELEMENT_ARRAY_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8893",
+    "desc": "Passed to bindBuffer or bufferData to specify the type of buffer being used."
+}, {
+    "name": "BUFFER_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8764",
+    "desc": "Passed to getBufferParameter to get a buffer's size."
+}, {
+    "name": "BUFFER_USAGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8765",
+    "desc": "Passed to getBufferParameter to get the hint for the buffer passed in when it was created."
+}, {
+    "name": "CURRENT_VERTEX_ATTRIB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8626",
+    "desc": "Passed to getVertexAttrib to read back the current vertex attribute."
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_ENABLED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8622",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8623",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_STRIDE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8624",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8625",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_NORMALIZED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x886A",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_POINTER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8645",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x889F",
+    "desc": " "
+}, {
+    "name": "CULL_FACE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B44",
+    "desc": "Passed to enable/disable to turn on/off culling. Can also be used with getParameter to find the current culling method."
+}, {
+    "name": "FRONT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0404",
+    "desc": "Passed to cullFace to specify that only front faces should be culled."
+}, {
+    "name": "BACK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0405",
+    "desc": "Passed to cullFace to specify that only back faces should be culled."
+}, {
+    "name": "FRONT_AND_BACK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0408",
+    "desc": "Passed to cullFace to specify that front and back faces should be culled."
+}, {
+    "name": "BLEND",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0BE2",
+    "desc": "Passed to enable/disable to turn on/off blending. Can also be used with getParameter to find the current blending method."
+}, {
+    "name": "DEPTH_TEST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B71",
+    "desc": "Passed to enable/disable to turn on/off the depth test. Can also be used with getParameter to query the depth test."
+}, {
+    "name": "DITHER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0BD0",
+    "desc": "Passed to enable/disable to turn on/off dithering. Can also be used with getParameter to find the current dithering method."
+}, {
+    "name": "POLYGON_OFFSET_FILL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8037",
+    "desc": "Passed to enable/disable to turn on/off the polygon offset. Useful for rendering hidden-line images, decals, and or solids with highlighted edges. Can also be used with getParameter to query the scissor test."
+}, {
+    "name": "SAMPLE_ALPHA_TO_COVERAGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x809E",
+    "desc": "Passed to enable/disable to turn on/off the alpha to coverage. Used in multi-sampling alpha channels."
+}, {
+    "name": "SAMPLE_COVERAGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80A0",
+    "desc": "Passed to enable/disable to turn on/off the sample coverage. Used in multi-sampling."
+}, {
+    "name": "SCISSOR_TEST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0C11",
+    "desc": "Passed to enable/disable to turn on/off the scissor test. Can also be used with getParameter to query the scissor test."
+}, {
+    "name": "STENCIL_TEST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0B90",
+    "desc": "Passed to enable/disable to turn on/off the stencil test. Can also be used with getParameter to query the stencil test."
+}, {
+    "name": "NO_ERROR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0",
+    "desc": "Returned from getError."
+}, {
+    "name": "INVALID_ENUM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0500",
+    "desc": "Returned from getError."
+}, {
+    "name": "INVALID_VALUE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0501",
+    "desc": "Returned from getError."
+}, {
+    "name": "INVALID_OPERATION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0502",
+    "desc": "Returned from getError."
+}, {
+    "name": "OUT_OF_MEMORY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0505",
+    "desc": "Returned from getError."
+}, {
+    "name": "CONTEXT_LOST_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9242",
+    "desc": "Returned from getError."
+}, {
+    "name": "CW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0900",
+    "desc": "Passed to frontFace to specify the front face of a polygon is drawn in the clockwise direction"
+}, {
+    "name": "CCW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0901",
+    "desc": "Passed to frontFace to specify the front face of a polygon is drawn in the counter clockwise direction"
+}, {
+    "name": "DONT_CARE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1100",
+    "desc": "There is no preference for this behavior."
+}, {
+    "name": "FASTEST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1101",
+    "desc": "The most efficient behavior should be used."
+}, {
+    "name": "NICEST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1102",
+    "desc": "The most correct or the highest quality option should be used."
+}, {
+    "name": "GENERATE_MIPMAP_HINT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8192",
+    "desc": "Hint for the quality of filtering when generating mipmap images with WebGLRenderingContext.generateMipmap()."
+}, {
+    "name": "BYTE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1400",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_BYTE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1401",
+    "desc": " "
+}, {
+    "name": "SHORT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1402",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_SHORT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1403",
+    "desc": " "
+}, {
+    "name": "INT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1404",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1405",
+    "desc": " "
+}, {
+    "name": "FLOAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1406",
+    "desc": " "
+}, {
+    "name": "DEPTH_COMPONENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1902",
+    "desc": " "
+}, {
+    "name": "ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1906",
+    "desc": " "
+}, {
+    "name": "RGB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1907",
+    "desc": " "
+}, {
+    "name": "RGBA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1908",
+    "desc": " "
+}, {
+    "name": "LUMINANCE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1909",
+    "desc": " "
+}, {
+    "name": "LUMINANCE_ALPHA",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x190A",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_BYTE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1401",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_SHORT_4_4_4_4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8033",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_SHORT_5_5_5_1",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8034",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_SHORT_5_6_5",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8363",
+    "desc": " "
+}, {
+    "name": "FRAGMENT_SHADER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B30",
+    "desc": "Passed to createShader to define a fragment shader."
+}, {
+    "name": "VERTEX_SHADER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B31",
+    "desc": "Passed to createShader to define a vertex shader"
+}, {
+    "name": "COMPILE_STATUS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B81",
+    "desc": "Passed to getShaderParamter to get the status of the compilation. Returns false if the shader was not compiled. You can then query getShaderInfoLog to find the exact error"
+}, {
+    "name": "DELETE_STATUS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B80",
+    "desc": "Passed to getShaderParamter to determine if a shader was deleted via deleteShader. Returns true if it was, false otherwise."
+}, {
+    "name": "LINK_STATUS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B82",
+    "desc": "Passed to getProgramParameter after calling linkProgram to determine if a program was linked correctly. Returns false if there were errors. Use getProgramInfoLog to find the exact error."
+}, {
+    "name": "VALIDATE_STATUS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B83",
+    "desc": "Passed to getProgramParameter after calling validateProgram to determine if it is valid. Returns false if errors were found."
+}, {
+    "name": "ATTACHED_SHADERS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B85",
+    "desc": "Passed to getProgramParameter after calling attachShader to determine if the shader was attached correctly. Returns false if errors occurred."
+}, {
+    "name": "ACTIVE_ATTRIBUTES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B89",
+    "desc": "Passed to getProgramParameter to get the number of attributes active in a program."
+}, {
+    "name": "ACTIVE_UNIFORMS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B86",
+    "desc": "Passed to getProgramParamter to get the number of uniforms active in a program."
+}, {
+    "name": "MAX_VERTEX_ATTRIBS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8869",
+    "desc": "The maximum number of entries possible in the vertex attribute list."
+}, {
+    "name": "MAX_VERTEX_UNIFORM_VECTORS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DFB",
+    "desc": " "
+}, {
+    "name": "MAX_VARYING_VECTORS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DFC",
+    "desc": " "
+}, {
+    "name": "MAX_COMBINED_TEXTURE_IMAGE_UNITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B4D",
+    "desc": " "
+}, {
+    "name": "MAX_VERTEX_TEXTURE_IMAGE_UNITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B4C",
+    "desc": " "
+}, {
+    "name": "MAX_TEXTURE_IMAGE_UNITS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8872",
+    "desc": "Implementation dependent number of maximum texture units. At least 8."
+}, {
+    "name": "MAX_FRAGMENT_UNIFORM_VECTORS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DFD",
+    "desc": " "
+}, {
+    "name": "SHADER_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B4F",
+    "desc": " "
+}, {
+    "name": "SHADING_LANGUAGE_VERSION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B8C",
+    "desc": " "
+}, {
+    "name": "CURRENT_PROGRAM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B8D",
+    "desc": " "
+}, {
+    "name": "NEVER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0200",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn."
+}, {
+    "name": "LESS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0201",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is less than the stored value."
+}, {
+    "name": "EQUAL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0202",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value."
+}, {
+    "name": "LEQUAL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0203",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is less than or equal to the stored value."
+}, {
+    "name": "GREATER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0204",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than the stored value."
+}, {
+    "name": "NOTEQUAL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0205",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is not equal to the stored value."
+}, {
+    "name": "GEQUAL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0206",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than or equal to the stored value."
+}, {
+    "name": "ALWAYS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0207",
+    "desc": "Passed to depthFunction or stencilFunction to specify depth or stencil tests will always pass. i.e. Pixels will be drawn in the order they are drawn."
+}, {
+    "name": "KEEP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1E00",
+    "desc": " "
+}, {
+    "name": "REPLACE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1E01",
+    "desc": " "
+}, {
+    "name": "INCR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1E02",
+    "desc": " "
+}, {
+    "name": "DECR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1E03",
+    "desc": " "
+}, {
+    "name": "INVERT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x150A",
+    "desc": " "
+}, {
+    "name": "INCR_WRAP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8507",
+    "desc": " "
+}, {
+    "name": "DECR_WRAP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8508",
+    "desc": " "
+}, {
+    "name": "NEAREST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2600",
+    "desc": " "
+}, {
+    "name": "LINEAR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2601",
+    "desc": " "
+}, {
+    "name": "NEAREST_MIPMAP_NEAREST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2700",
+    "desc": " "
+}, {
+    "name": "LINEAR_MIPMAP_NEAREST",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2701",
+    "desc": " "
+}, {
+    "name": "NEAREST_MIPMAP_LINEAR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2702",
+    "desc": " "
+}, {
+    "name": "LINEAR_MIPMAP_LINEAR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2703",
+    "desc": " "
+}, {
+    "name": "TEXTURE_MAG_FILTER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2800",
+    "desc": " "
+}, {
+    "name": "TEXTURE_MIN_FILTER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2801",
+    "desc": " "
+}, {
+    "name": "TEXTURE_WRAP_S",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2802",
+    "desc": " "
+}, {
+    "name": "TEXTURE_WRAP_T",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2803",
+    "desc": " "
+}, {
+    "name": "TEXTURE_2D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0DE1",
+    "desc": " "
+}, {
+    "name": "TEXTURE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1702",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8513",
+    "desc": " "
+}, {
+    "name": "TEXTURE_BINDING_CUBE_MAP",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8514",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_POSITIVE_X",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8515",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_NEGATIVE_X",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8516",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_POSITIVE_Y",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8517",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_NEGATIVE_Y",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8518",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_POSITIVE_Z",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8519",
+    "desc": " "
+}, {
+    "name": "TEXTURE_CUBE_MAP_NEGATIVE_Z",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x851A",
+    "desc": " "
+}, {
+    "name": "MAX_CUBE_MAP_TEXTURE_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x851C",
+    "desc": " "
+}, {
+    "name": "TEXTURE0 - 31",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84C0 - 0x84DF",
+    "desc": "A texture unit."
+}, {
+    "name": "ACTIVE_TEXTURE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84E0",
+    "desc": "The current active texture unit."
+}, {
+    "name": "REPEAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x2901",
+    "desc": " "
+}, {
+    "name": "CLAMP_TO_EDGE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x812F",
+    "desc": " "
+}, {
+    "name": "MIRRORED_REPEAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8370",
+    "desc": " "
+}, {
+    "name": "FLOAT_VEC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B50",
+    "desc": " "
+}, {
+    "name": "FLOAT_VEC3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B51",
+    "desc": " "
+}, {
+    "name": "FLOAT_VEC4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B52",
+    "desc": " "
+}, {
+    "name": "INT_VEC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B53",
+    "desc": " "
+}, {
+    "name": "INT_VEC3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B54",
+    "desc": " "
+}, {
+    "name": "INT_VEC4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B55",
+    "desc": " "
+}, {
+    "name": "BOOL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B56",
+    "desc": " "
+}, {
+    "name": "BOOL_VEC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B57",
+    "desc": " "
+}, {
+    "name": "BOOL_VEC3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B58",
+    "desc": " "
+}, {
+    "name": "BOOL_VEC4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B59",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B5A",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B5B",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B5C",
+    "desc": " "
+}, {
+    "name": "SAMPLER_2D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B5E",
+    "desc": " "
+}, {
+    "name": "SAMPLER_CUBE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B60",
+    "desc": " "
+}, {
+    "name": "LOW_FLOAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF0",
+    "desc": " "
+}, {
+    "name": "MEDIUM_FLOAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF1",
+    "desc": " "
+}, {
+    "name": "HIGH_FLOAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF2",
+    "desc": " "
+}, {
+    "name": "LOW_INT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF3",
+    "desc": " "
+}, {
+    "name": "MEDIUM_INT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF4",
+    "desc": " "
+}, {
+    "name": "HIGH_INT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DF5",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D40",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D41",
+    "desc": " "
+}, {
+    "name": "RGBA4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8056",
+    "desc": " "
+}, {
+    "name": "RGB5_A1",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8057",
+    "desc": " "
+}, {
+    "name": "RGB565",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D62",
+    "desc": " "
+}, {
+    "name": "DEPTH_COMPONENT16",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x81A5",
+    "desc": " "
+}, {
+    "name": "STENCIL_INDEX8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D48",
+    "desc": " "
+}, {
+    "name": "DEPTH_STENCIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84F9",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_WIDTH",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D42",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_HEIGHT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D43",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_INTERNAL_FORMAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D44",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_RED_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D50",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_GREEN_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D51",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_BLUE_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D52",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_ALPHA_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D53",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_DEPTH_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D54",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_STENCIL_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D55",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD0",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD1",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD2",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD3",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT0",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE0",
+    "desc": " "
+}, {
+    "name": "DEPTH_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D00",
+    "desc": " "
+}, {
+    "name": "STENCIL_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D20",
+    "desc": " "
+}, {
+    "name": "DEPTH_STENCIL_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x821A",
+    "desc": " "
+}, {
+    "name": "NONE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_COMPLETE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD5",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_INCOMPLETE_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD6",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD7",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_INCOMPLETE_DIMENSIONS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD9",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_UNSUPPORTED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CDD",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA6",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA7",
+    "desc": " "
+}, {
+    "name": "MAX_RENDERBUFFER_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84E8",
+    "desc": " "
+}, {
+    "name": "INVALID_FRAMEBUFFER_OPERATION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0506",
+    "desc": " "
+}, {
+    "name": "UNPACK_FLIP_Y_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9240",
+    "desc": " "
+}, {
+    "name": "UNPACK_PREMULTIPLY_ALPHA_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9241",
+    "desc": " "
+}, {
+    "name": "UNPACK_COLORSPACE_CONVERSION_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9243",
+    "desc": " "
+}, {
+    "name": "READ_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0C02",
+    "desc": " "
+}, {
+    "name": "UNPACK_ROW_LENGTH",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0CF2",
+    "desc": " "
+}, {
+    "name": "UNPACK_SKIP_ROWS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0CF3",
+    "desc": " "
+}, {
+    "name": "UNPACK_SKIP_PIXELS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0CF4",
+    "desc": " "
+}, {
+    "name": "PACK_ROW_LENGTH",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D02",
+    "desc": " "
+}, {
+    "name": "PACK_SKIP_ROWS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D03",
+    "desc": " "
+}, {
+    "name": "PACK_SKIP_PIXELS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x0D04",
+    "desc": " "
+}, {
+    "name": "TEXTURE_BINDING_3D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x806A",
+    "desc": " "
+}, {
+    "name": "UNPACK_SKIP_IMAGES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x806D",
+    "desc": " "
+}, {
+    "name": "UNPACK_IMAGE_HEIGHT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x806E",
+    "desc": " "
+}, {
+    "name": "MAX_3D_TEXTURE_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8073",
+    "desc": " "
+}, {
+    "name": "MAX_ELEMENTS_VERTICES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80E8",
+    "desc": " "
+}, {
+    "name": "MAX_ELEMENTS_INDICES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x80E9",
+    "desc": " "
+}, {
+    "name": "MAX_TEXTURE_LOD_BIAS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84FD",
+    "desc": " "
+}, {
+    "name": "MAX_FRAGMENT_UNIFORM_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B49",
+    "desc": " "
+}, {
+    "name": "MAX_VERTEX_UNIFORM_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B4A",
+    "desc": " "
+}, {
+    "name": "MAX_ARRAY_TEXTURE_LAYERS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88FF",
+    "desc": " "
+}, {
+    "name": "MIN_PROGRAM_TEXEL_OFFSET",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8904",
+    "desc": " "
+}, {
+    "name": "MAX_PROGRAM_TEXEL_OFFSET",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8905",
+    "desc": " "
+}, {
+    "name": "MAX_VARYING_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B4B",
+    "desc": " "
+}, {
+    "name": "FRAGMENT_SHADER_DERIVATIVE_HINT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B8B",
+    "desc": " "
+}, {
+    "name": "RASTERIZER_DISCARD",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C89",
+    "desc": " "
+}, {
+    "name": "VERTEX_ARRAY_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x85B5",
+    "desc": " "
+}, {
+    "name": "MAX_VERTEX_OUTPUT_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9122",
+    "desc": " "
+}, {
+    "name": "MAX_FRAGMENT_INPUT_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9125",
+    "desc": " "
+}, {
+    "name": "MAX_SERVER_WAIT_TIMEOUT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9111",
+    "desc": " "
+}, {
+    "name": "MAX_ELEMENT_INDEX",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D6B",
+    "desc": " "
+}, {
+    "name": "RED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1903",
+    "desc": " "
+}, {
+    "name": "RGB8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8051",
+    "desc": " "
+}, {
+    "name": "RGBA8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8058",
+    "desc": " "
+}, {
+    "name": "RGB10_A2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8059",
+    "desc": " "
+}, {
+    "name": "TEXTURE_3D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x806F",
+    "desc": " "
+}, {
+    "name": "TEXTURE_WRAP_R",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8072",
+    "desc": " "
+}, {
+    "name": "TEXTURE_MIN_LOD",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x813A",
+    "desc": " "
+}, {
+    "name": "TEXTURE_MAX_LOD",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x813B",
+    "desc": " "
+}, {
+    "name": "TEXTURE_BASE_LEVEL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x813C",
+    "desc": " "
+}, {
+    "name": "TEXTURE_MAX_LEVEL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x813D",
+    "desc": " "
+}, {
+    "name": "TEXTURE_COMPARE_MODE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x884C",
+    "desc": " "
+}, {
+    "name": "TEXTURE_COMPARE_FUNC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x884D",
+    "desc": " "
+}, {
+    "name": "SRGB",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C40",
+    "desc": " "
+}, {
+    "name": "SRGB8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C41",
+    "desc": " "
+}, {
+    "name": "SRGB8_ALPHA8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C43",
+    "desc": " "
+}, {
+    "name": "COMPARE_REF_TO_TEXTURE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x884E",
+    "desc": " "
+}, {
+    "name": "RGBA32F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8814",
+    "desc": " "
+}, {
+    "name": "RGB32F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8815",
+    "desc": " "
+}, {
+    "name": "RGBA16F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x881A",
+    "desc": " "
+}, {
+    "name": "RGB16F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x881B",
+    "desc": " "
+}, {
+    "name": "TEXTURE_2D_ARRAY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C1A",
+    "desc": " "
+}, {
+    "name": "TEXTURE_BINDING_2D_ARRAY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C1D",
+    "desc": " "
+}, {
+    "name": "R11F_G11F_B10F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C3A",
+    "desc": " "
+}, {
+    "name": "RGB9_E5",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C3D",
+    "desc": " "
+}, {
+    "name": "RGBA32UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D70",
+    "desc": " "
+}, {
+    "name": "RGB32UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D71",
+    "desc": " "
+}, {
+    "name": "RGBA16UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D76",
+    "desc": " "
+}, {
+    "name": "RGB16UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D77",
+    "desc": " "
+}, {
+    "name": "RGBA8UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D7C",
+    "desc": " "
+}, {
+    "name": "RGB8UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D7D",
+    "desc": " "
+}, {
+    "name": "RGBA32I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D82",
+    "desc": " "
+}, {
+    "name": "RGB32I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D83",
+    "desc": " "
+}, {
+    "name": "RGBA16I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D88",
+    "desc": " "
+}, {
+    "name": "RGB16I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D89",
+    "desc": " "
+}, {
+    "name": "RGBA8I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D8E",
+    "desc": " "
+}, {
+    "name": "RGB8I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D8F",
+    "desc": " "
+}, {
+    "name": "RED_INTEGER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D94",
+    "desc": " "
+}, {
+    "name": "RGB_INTEGER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D98",
+    "desc": " "
+}, {
+    "name": "RGBA_INTEGER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D99",
+    "desc": " "
+}, {
+    "name": "R8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8229",
+    "desc": " "
+}, {
+    "name": "RG8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x822B",
+    "desc": " "
+}, {
+    "name": "R16F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x822D",
+    "desc": " "
+}, {
+    "name": "R32F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x822E",
+    "desc": " "
+}, {
+    "name": "RG16F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x822F",
+    "desc": " "
+}, {
+    "name": "RG32F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8230",
+    "desc": " "
+}, {
+    "name": "R8I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8231",
+    "desc": " "
+}, {
+    "name": "R8UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8232",
+    "desc": " "
+}, {
+    "name": "R16I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8233",
+    "desc": " "
+}, {
+    "name": "R16UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8234",
+    "desc": " "
+}, {
+    "name": "R32I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8235",
+    "desc": " "
+}, {
+    "name": "R32UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8236",
+    "desc": " "
+}, {
+    "name": "RG8I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8237",
+    "desc": " "
+}, {
+    "name": "RG8UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8238",
+    "desc": " "
+}, {
+    "name": "RG16I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8239",
+    "desc": " "
+}, {
+    "name": "RG16UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x823A",
+    "desc": " "
+}, {
+    "name": "RG32I",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x823B",
+    "desc": " "
+}, {
+    "name": "RG32UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x823C",
+    "desc": " "
+}, {
+    "name": "R8_SNORM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F94",
+    "desc": " "
+}, {
+    "name": "RG8_SNORM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F95",
+    "desc": " "
+}, {
+    "name": "RGB8_SNORM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F96",
+    "desc": " "
+}, {
+    "name": "RGBA8_SNORM",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F97",
+    "desc": " "
+}, {
+    "name": "RGB10_A2UI",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x906F",
+    "desc": " "
+}, {
+    "name": "TEXTURE_IMMUTABLE_FORMAT ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x912F",
+    "desc": " "
+}, {
+    "name": "TEXTURE_IMMUTABLE_LEVELS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x82DF",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_2_10_10_10_REV",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8368",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_10F_11F_11F_REV",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C3B",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_5_9_9_9_REV",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C3E",
+    "desc": " "
+}, {
+    "name": "FLOAT_32_UNSIGNED_INT_24_8_REV",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DAD",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_24_8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84FA",
+    "desc": " "
+}, {
+    "name": "HALF_FLOAT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x140B",
+    "desc": " "
+}, {
+    "name": "RG",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8227",
+    "desc": " "
+}, {
+    "name": "RG_INTEGER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8228",
+    "desc": " "
+}, {
+    "name": "INT_2_10_10_10_REV",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D9F",
+    "desc": " "
+}, {
+    "name": "CURRENT_QUERY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8865",
+    "desc": " "
+}, {
+    "name": "QUERY_RESULT ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8866",
+    "desc": " "
+}, {
+    "name": "QUERY_RESULT_AVAILABLE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8867",
+    "desc": " "
+}, {
+    "name": "ANY_SAMPLES_PASSED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C2F",
+    "desc": " "
+}, {
+    "name": "ANY_SAMPLES_PASSED_CONSERVATIVE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D6A",
+    "desc": " "
+}, {
+    "name": "MAX_DRAW_BUFFERS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8824",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER0",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8825",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER1",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8826",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8827",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8828",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8829",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER5",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882A",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER6",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882B",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER7",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882C",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882D",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER9",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882E",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER10",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882F",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER11",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8830",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER12",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8831",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER13",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8832",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER14",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8833",
+    "desc": " "
+}, {
+    "name": "DRAW_BUFFER15",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8834",
+    "desc": " "
+}, {
+    "name": "MAX_COLOR_ATTACHMENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CDF",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT1",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE1",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE2",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE3",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE4",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT5",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE5",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT6",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE6",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT7",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE7",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE8",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT9",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE9",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT10",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEA",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT11",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEB",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT12",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEC",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT13",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CED",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT14",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEE",
+    "desc": " "
+}, {
+    "name": "COLOR_ATTACHMENT15",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEF",
+    "desc": " "
+}, {
+    "name": "SAMPLER_3D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B5F",
+    "desc": " "
+}, {
+    "name": "SAMPLER_2D_SHADOW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B62",
+    "desc": " "
+}, {
+    "name": "SAMPLER_2D_ARRAY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC1",
+    "desc": " "
+}, {
+    "name": "SAMPLER_2D_ARRAY_SHADOW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC4",
+    "desc": " "
+}, {
+    "name": "SAMPLER_CUBE_SHADOW",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC5",
+    "desc": " "
+}, {
+    "name": "INT_SAMPLER_2D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DCA",
+    "desc": " "
+}, {
+    "name": "INT_SAMPLER_3D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DCB",
+    "desc": " "
+}, {
+    "name": "INT_SAMPLER_CUBE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DCC",
+    "desc": " "
+}, {
+    "name": "INT_SAMPLER_2D_ARRAY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DCF",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_SAMPLER_2D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DD2",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_SAMPLER_3D",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DD3",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_SAMPLER_CUBE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DD4",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_SAMPLER_2D_ARRAY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DD7",
+    "desc": " "
+}, {
+    "name": "MAX_SAMPLES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D57",
+    "desc": " "
+}, {
+    "name": "SAMPLER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8919",
+    "desc": " "
+}, {
+    "name": "PIXEL_PACK_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88EB",
+    "desc": " "
+}, {
+    "name": "PIXEL_UNPACK_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88EC",
+    "desc": " "
+}, {
+    "name": "PIXEL_PACK_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88ED",
+    "desc": " "
+}, {
+    "name": "PIXEL_UNPACK_BUFFER_BINDING ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88EF",
+    "desc": " "
+}, {
+    "name": "COPY_READ_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F36",
+    "desc": " "
+}, {
+    "name": "COPY_WRITE_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F37",
+    "desc": " "
+}, {
+    "name": "COPY_READ_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F36",
+    "desc": " "
+}, {
+    "name": "COPY_WRITE_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F37",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT2x3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B65",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT2x4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B66",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT3x2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B67",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT3x4 ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B68",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT4x2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B69",
+    "desc": " "
+}, {
+    "name": "FLOAT_MAT4x3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B6A",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_VEC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC6",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_VEC3",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC7",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_INT_VEC4",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8DC8",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_NORMALIZED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C17",
+    "desc": " "
+}, {
+    "name": "SIGNED_NORMALIZED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8F9C",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_INTEGER ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88FD",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_DIVISOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88FE",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BUFFER_MODE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C7F",
+    "desc": " "
+}, {
+    "name": "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C80",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_VARYINGS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C83",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BUFFER_START",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C84",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BUFFER_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C85",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C88",
+    "desc": " "
+}, {
+    "name": "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8A",
+    "desc": " "
+}, {
+    "name": "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8B",
+    "desc": " "
+}, {
+    "name": "INTERLEAVED_ATTRIBS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8C",
+    "desc": " "
+}, {
+    "name": "SEPARATE_ATTRIBS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8D",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8E",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C8F",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8E22",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_PAUSED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8E23",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_ACTIVE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8E24",
+    "desc": " "
+}, {
+    "name": "TRANSFORM_FEEDBACK_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8E25",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8210",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8211",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_RED_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8212",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8213",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8214",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8215",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8216",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8217",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_DEFAULT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8218",
+    "desc": " "
+}, {
+    "name": "DEPTH_STENCIL_ATTACHMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x821A",
+    "desc": " "
+}, {
+    "name": "DEPTH_STENCIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84F9",
+    "desc": " "
+}, {
+    "name": "DEPTH24_STENCIL8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88F0",
+    "desc": " "
+}, {
+    "name": "DRAW_FRAMEBUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA6",
+    "desc": " "
+}, {
+    "name": "READ_FRAMEBUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA8",
+    "desc": " "
+}, {
+    "name": "DRAW_FRAMEBUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CA9",
+    "desc": " "
+}, {
+    "name": "READ_FRAMEBUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CAA",
+    "desc": " "
+}, {
+    "name": "RENDERBUFFER_SAMPLES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CAB",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CD4",
+    "desc": " "
+}, {
+    "name": "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D56",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BUFFER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A11",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BUFFER_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A28",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BUFFER_START",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A29",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BUFFER_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A2A",
+    "desc": " "
+}, {
+    "name": "MAX_VERTEX_UNIFORM_BLOCKS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A2B",
+    "desc": " "
+}, {
+    "name": "MAX_FRAGMENT_UNIFORM_BLOCKS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A2D",
+    "desc": " "
+}, {
+    "name": "MAX_COMBINED_UNIFORM_BLOCKS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A2E",
+    "desc": " "
+}, {
+    "name": "MAX_UNIFORM_BUFFER_BINDINGS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A2F",
+    "desc": " "
+}, {
+    "name": "MAX_UNIFORM_BLOCK_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A30",
+    "desc": " "
+}, {
+    "name": "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A31",
+    "desc": " "
+}, {
+    "name": "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A33",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BUFFER_OFFSET_ALIGNMENT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A34",
+    "desc": " "
+}, {
+    "name": "ACTIVE_UNIFORM_BLOCKS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A36",
+    "desc": " "
+}, {
+    "name": "UNIFORM_TYPE ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A37",
+    "desc": " "
+}, {
+    "name": "UNIFORM_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A38",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_INDEX",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3A",
+    "desc": " "
+}, {
+    "name": "UNIFORM_OFFSET",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3B",
+    "desc": " "
+}, {
+    "name": "UNIFORM_ARRAY_STRIDE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3C",
+    "desc": " "
+}, {
+    "name": "UNIFORM_MATRIX_STRIDE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3D",
+    "desc": " "
+}, {
+    "name": "UNIFORM_IS_ROW_MAJOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3E",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_BINDING",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A3F",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_DATA_SIZE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A40",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_ACTIVE_UNIFORMS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A42",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A43",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A44",
+    "desc": " "
+}, {
+    "name": "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8A46",
+    "desc": " "
+}, {
+    "name": "OBJECT_TYPE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9112",
+    "desc": " "
+}, {
+    "name": "SYNC_CONDITION",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9113",
+    "desc": " "
+}, {
+    "name": "SYNC_STATUS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9114",
+    "desc": " "
+}, {
+    "name": "SYNC_FLAGS",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9115",
+    "desc": " "
+}, {
+    "name": "SYNC_FENCE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9116",
+    "desc": " "
+}, {
+    "name": "SYNC_GPU_COMMANDS_COMPLETE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9117",
+    "desc": " "
+}, {
+    "name": "UNSIGNALED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9118",
+    "desc": " "
+}, {
+    "name": "SIGNALED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9119",
+    "desc": " "
+}, {
+    "name": "ALREADY_SIGNALED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x911A",
+    "desc": " "
+}, {
+    "name": "TIMEOUT_EXPIRED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x911B",
+    "desc": " "
+}, {
+    "name": "CONDITION_SATISFIED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x911C",
+    "desc": " "
+}, {
+    "name": "WAIT_FAILED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x911D",
+    "desc": " "
+}, {
+    "name": "SYNC_FLUSH_COMMANDS_BIT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x00000001",
+    "desc": " "
+}, {
+    "name": "COLOR",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1800",
+    "desc": " "
+}, {
+    "name": "DEPTH",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1801",
+    "desc": " "
+}, {
+    "name": "STENCIL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x1802",
+    "desc": " "
+}, {
+    "name": "MIN",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8007",
+    "desc": " "
+}, {
+    "name": "MAX",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8008",
+    "desc": " "
+}, {
+    "name": "DEPTH_COMPONENT24",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x81A6",
+    "desc": " "
+}, {
+    "name": "STREAM_READ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E1",
+    "desc": " "
+}, {
+    "name": "STREAM_COPY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E2",
+    "desc": " "
+}, {
+    "name": "STATIC_READ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E5",
+    "desc": " "
+}, {
+    "name": "STATIC_COPY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E6",
+    "desc": " "
+}, {
+    "name": "DYNAMIC_READ",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88E9",
+    "desc": " "
+}, {
+    "name": "DYNAMIC_COPY",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88EA",
+    "desc": " "
+}, {
+    "name": "DEPTH_COMPONENT32F",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CAC",
+    "desc": " "
+}, {
+    "name": "DEPTH32F_STENCIL8",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CAD",
+    "desc": " "
+}, {
+    "name": "INVALID_INDEX",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0xFFFFFFFF",
+    "desc": " "
+}, {
+    "name": "TIMEOUT_IGNORED",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "-1",
+    "desc": " "
+}, {
+    "name": "MAX_CLIENT_WAIT_TIMEOUT_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9247",
+    "desc": " "
+}, {
+    "name": "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88FE",
+    "desc": "Describes the frequency divisor used for instanced rendering."
+}, {
+    "name": "UNMASKED_VENDOR_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9245",
+    "desc": "Passed to getParameter to get the vendor string of the graphics driver."
+}, {
+    "name": "UNMASKED_RENDERER_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9246",
+    "desc": "Passed to getParameter to get the renderer string of the graphics driver."
+}, {
+    "name": "MAX_TEXTURE_MAX_ANISOTROPY_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84FF",
+    "desc": "Returns the maximum available anisotropy."
+}, {
+    "name": "TEXTURE_MAX_ANISOTROPY_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84FE",
+    "desc": "Passed to texParameter to set the desired maximum anisotropy for a texture."
+}, {
+    "name": "COMPRESSED_RGB_S3TC_DXT1_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x83F0",
+    "desc": "A DXT1-compressed image in an RGB image format."
+}, {
+    "name": "COMPRESSED_RGBA_S3TC_DXT1_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x83F1",
+    "desc": "A DXT1-compressed image in an RGB image format with a simple on/off alpha value."
+}, {
+    "name": "COMPRESSED_RGBA_S3TC_DXT3_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x83F2",
+    "desc": "A DXT3-compressed image in an RGBA image format. Compared to a 32-bit RGBA texture, it offers 4:1 compression."
+}, {
+    "name": "COMPRESSED_RGBA_S3TC_DXT5_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x83F3",
+    "desc": "A DXT5-compressed image in an RGBA image format. It also provides a 4:1 compression, but differs to the DXT3 compression in how the alpha compression is done."
+}, {
+    "name": "COMPRESSED_R11_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9270",
+    "desc": "One-channel (red) unsigned format compression."
+}, {
+    "name": "COMPRESSED_SIGNED_R11_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9271",
+    "desc": "One-channel (red) signed format compression."
+}, {
+    "name": "COMPRESSED_RG11_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9272",
+    "desc": "Two-channel (red and green) unsigned format compression."
+}, {
+    "name": "COMPRESSED_SIGNED_RG11_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9273",
+    "desc": "Two-channel (red and green) signed format compression."
+}, {
+    "name": "COMPRESSED_RGB8_ETC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9274",
+    "desc": "Compresses RBG8 data with no alpha channel."
+}, {
+    "name": "COMPRESSED_RGBA8_ETC2_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9275",
+    "desc": "Compresses RGBA8 data. The RGB part is encoded the same as RGB_ETC2, but the alpha part is encoded separately."
+}, {
+    "name": "COMPRESSED_SRGB8_ETC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9276",
+    "desc": "Compresses sRBG8 data with no alpha channel."
+}, {
+    "name": "COMPRESSED_SRGB8_ALPHA8_ETC2_EAC",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9277",
+    "desc": "Compresses sRGBA8 data. The sRGB part is encoded the same as SRGB_ETC2, but the alpha part is encoded separately."
+}, {
+    "name": "COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9278",
+    "desc": "Similar to RGB8_ETC, but with ability to punch through the alpha channel, which means to make it completely opaque or transparent."
+}, {
+    "name": "COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x9279",
+    "desc": "Similar to SRGB8_ETC, but with ability to punch through the alpha channel, which means to make it completely opaque or transparent."
+}, {
+    "name": "COMPRESSED_RGB_PVRTC_4BPPV1_IMG",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C00",
+    "desc": "RGB compression in 4-bit mode. One block for each 4×4 pixels."
+}, {
+    "name": "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C02",
+    "desc": "RGBA compression in 4-bit mode. One block for each 4×4 pixels."
+}, {
+    "name": "COMPRESSED_RGB_PVRTC_2BPPV1_IMG",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C01",
+    "desc": "RGB compression in 2-bit mode. One block for each 8×4 pixels."
+}, {
+    "name": "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C03",
+    "desc": "RGBA compression in 2-bit mode. One block for each 8×4 pixe"
+}, {
+    "name": "COMPRESSED_RGB_ETC1_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D64",
+    "desc": "Compresses 24-bit RGB data with no alpha channel."
+}, {
+    "name": "COMPRESSED_RGB_ATC_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C92",
+    "desc": "Compresses RGB textures with no alpha channel."
+}, {
+    "name": "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C92",
+    "desc": "Compresses RGBA textures using explicit alpha encoding (useful when alpha transitions are sharp)."
+}, {
+    "name": "COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x87EE",
+    "desc": "Compresses RGBA textures using interpolated alpha encoding (useful when alpha transitions are gradient)."
+}, {
+    "name": "UNSIGNED_INT_24_8_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x84FA",
+    "desc": "Unsigned integer type for 24-bit depth texture data."
+}, {
+    "name": "HALF_FLOAT_OES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8D61",
+    "desc": "Half floating-point type (16-bit)."
+}, {
+    "name": "RGBA32F_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8814",
+    "desc": "RGBA 32-bit floating-point color-renderable format."
+}, {
+    "name": "RGB32F_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8815",
+    "desc": "RGB 32-bit floating-point color-renderable format."
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8211",
+    "desc": " "
+}, {
+    "name": "UNSIGNED_NORMALIZED_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C17",
+    "desc": " "
+}, {
+    "name": "MIN_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8007",
+    "desc": "Produces the minimum color components of the source and destination colors."
+}, {
+    "name": "MAX_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8008",
+    "desc": "Produces the maximum color components of the source and destination colors."
+}, {
+    "name": "SRGB_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C40",
+    "desc": "Unsized sRGB format that leaves the precision up to the driver."
+}, {
+    "name": "SRGB_ALPHA_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C42",
+    "desc": "Unsized sRGB format with unsized alpha component."
+}, {
+    "name": "SRGB8_ALPHA8_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8C43",
+    "desc": "Sized (8-bit) sRGB and alpha formats."
+}, {
+    "name": "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8210",
+    "desc": "Returns the framebuffer color encoding."
+}, {
+    "name": "FRAGMENT_SHADER_DERIVATIVE_HINT_OES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8B8B",
+    "desc": "Indicates the accuracy of the derivative calculation for the GLSL built-in functions: dFdx, dFdy, and fwidth."
+}, {
+    "name": "COLOR_ATTACHMENT0_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE0",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT1_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE1",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT2_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE2",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT3_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE3",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT4_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE4",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT5_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE5",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT6_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE6",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT7_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE7",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT8_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE8",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT9_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CE9",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT10_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEA",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT11_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEB",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT12_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEC",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT13_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CED",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT14_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEE",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "COLOR_ATTACHMENT15_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CEF",
+    "desc": "Framebuffer color attachment point"
+}, {
+    "name": "DRAW_BUFFER0_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8825",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER1_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8826",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER2_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8827",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER3_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8828",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER4_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8829",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER5_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882A",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER6_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882B",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER7_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882C",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER8_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882D",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER9_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882E",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER10_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x882F",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER11_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8830",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER12_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8831",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER13_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8832",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER14_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8833",
+    "desc": "Draw buffer"
+}, {
+    "name": "DRAW_BUFFER15_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8834",
+    "desc": "Draw buffer"
+}, {
+    "name": "MAX_COLOR_ATTACHMENTS_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8CDF",
+    "desc": "Maximum number of framebuffer color attachment points"
+}, {
+    "name": "MAX_DRAW_BUFFERS_WEBGL",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8824",
+    "desc": "Maximum number of draw buffers"
+}, {
+    "name": "VERTEX_ARRAY_BINDING_OES",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x85B5",
+    "desc": "The bound vertex array object (VAO)."
+}, {
+    "name": "QUERY_COUNTER_BITS_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8864",
+    "desc": "The number of bits used to hold the query result for the given target."
+}, {
+    "name": "CURRENT_QUERY_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8865",
+    "desc": "The currently active query."
+}, {
+    "name": "QUERY_RESULT_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8866",
+    "desc": "The query result."
+}, {
+    "name": "QUERY_RESULT_AVAILABLE_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8867",
+    "desc": "A Boolean indicating whether or not a query result is available."
+}, {
+    "name": "TIME_ELAPSED_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x88BF",
+    "desc": "Elapsed time (in nanoseconds)."
+}, {
+    "name": "TIMESTAMP_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8E28",
+    "desc": "The current time."
+}, {
+    "name": "GPU_DISJOINT_EXT",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "0x8FBB",
+    "desc": "A Boolean indicating whether or not the GPU performed any disjoint operation."
+}, {
+    "name": "WebGL 1.0The definition of 'WebGLRenderingContext' in that specification.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "Recommendation",
+    "desc": "Initial definition"
+}, {
+    "name": "WebGL 2.0The definition of 'WebGL2RenderingContext' in that specification.",
+    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants",
+    "value": "Editor's Draft",
+    "desc": "Defines additional constants."
+}]
