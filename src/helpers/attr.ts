@@ -8,5 +8,6 @@ export type Attr = {
     syntax:string,
     returnVal:string,
     url:string,
+    type:string,
     params:Array<param>
 };

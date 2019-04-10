@@ -6,11 +6,16 @@ import {
   CompletionContext,
   CompletionItem
 } from "vscode";
-import { getInputVal } from "../helpers/utils";
+import { getInputVal, createPropRegExp, createCompleteItems } from "../helpers/utils";
 export default class CompletionItemProviderPlugin implements CompletionItemProvider {
   async provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext) {
     //获取用户输入
     const inputVal = getInputVal(document, position);
-    return [new CompletionItem("")];
+    if (!inputVal) {
+      return [];
+    }
+    //产生正则表达式
+    const reg = createPropRegExp(inputVal);
+    return createCompleteItems(reg);
   }
 }

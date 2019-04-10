@@ -113,10 +113,6 @@ export function swapConstantComponentMarkDown(comp:Constant | undefined):Markdow
     return markDownString;
 }
 
-export function getCompleteProps(inputVal:string):Array<string> {
-    return [];
-}
-
 export function getInputVal(doc:TextDocument, pos:Position):string {
     let val:string = '';
     let isGl:boolean = false;
@@ -126,9 +122,9 @@ export function getInputVal(doc:TextDocument, pos:Position):string {
     for (var i = character;i >= 0; i--) {
         let char = lineText.charAt(i);
         if (char === '.') {
-            val = char + val;
             break;
         }
+        val = char + val;
     }
     if (lineText.substring(i-2, i) === 'gl') {
         isGl = true;
@@ -136,6 +132,39 @@ export function getInputVal(doc:TextDocument, pos:Position):string {
     return isGl ? val : '';
 }
 
-export function createCompleteItem(prop:string):CompletionItem {
-    return new CompletionItem(prop);
+export function createPropRegExp(val:string):RegExp {
+    let pattern:string = '.*';
+    for (let i = 0; i < val.length; i++) {
+        pattern += val.charAt(i) + '.*';
+    }
+    return new RegExp(pattern, 'gi');
+}
+export function createCompleteItems(reg:RegExp):Array<CompletionItem> {
+    const items:CompletionItem[] = [];
+    attrs.forEach(attr => {
+        if (attr.name.match(reg)) {
+            let item:CompletionItem;
+            if (attr.type === 'value') {
+                item = new CompletionItem(attr.name, 11);
+            } else {
+                item = createFunCompleteItem(attr);
+            }
+            items.push(item);
+        }
+    });
+    constants.forEach(cst => {
+        if (cst.name.match(reg)) {
+            items.push(new CompletionItem(cst.name, 20));
+        }
+    });
+    return items;
+}
+/**
+ * 函数类型的补全提示
+ * @param {Attr} attr
+ * @return {CompletionItem}
+ */
+function createFunCompleteItem(attr:Attr):CompletionItem {
+    //TODO:增加函数参数的提示和填写
+    return new CompletionItem('123');
 }

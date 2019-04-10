@@ -4,6 +4,7 @@
     "syntax": "gl.canvas;",
     "params": [],
     "returnVal": "Either a HTMLCanvasElement or OffscreenCanvas object or null.",
+    "type": "value",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/canvas"
 }, {
     "name": "commit",
@@ -11,6 +12,7 @@
     "syntax": "void WebGLRenderingContext.commit()",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/commit"
 }, {
     "name": "drawingBufferWidth",
@@ -18,6 +20,7 @@
     "syntax": "gl.drawingBufferWidth;",
     "params": [],
     "returnVal": "None.",
+    "type": "value",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawingBufferWidth"
 }, {
     "name": "drawingBufferHeight",
@@ -25,6 +28,7 @@
     "syntax": "gl.drawingBufferHeight;",
     "params": [],
     "returnVal": "None.",
+    "type": "value",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawingBufferHeight"
 }, {
     "name": "getContextAttributes",
@@ -32,6 +36,7 @@
     "syntax": "gl.getContextAttributes();",
     "params": [],
     "returnVal": "A WebGLContextAttributes object that contains the actual context parameters, or null if the context is lost.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getContextAttributes"
 }, {
     "name": "isContextLost",
@@ -39,6 +44,7 @@
     "syntax": "gl.isContextLost();",
     "params": [],
     "returnVal": "A Boolean. True if the context is lost, false otherwise.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost"
 }, {
     "name": "scissor",
@@ -58,6 +64,7 @@
         "desc": "A non-negative Glsizei specifying the height of the scissor box. Default value: height of the canvas."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/scissor"
 }, {
     "name": "viewport",
@@ -77,6 +84,7 @@
         "desc": "A non-negative Glsizei specifying the height of the viewport. Default value: height of the canvas."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/viewport"
 }, {
     "name": "activeTexture",
@@ -87,6 +95,7 @@
         "desc": "The texture unit to make active. The value is a gl.TEXTUREI where I is within the range from 0 to gl.MAX_COMBINED_TEXTURE_IMAGE_UNITS - 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/activeTexture"
 }, {
     "name": "blendColor",
@@ -106,6 +115,7 @@
         "desc": "A GLclampf for the alpha component (transparency) in the range of 0 to 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendColor"
 }, {
     "name": "blendEquation",
@@ -116,6 +126,7 @@
         "desc": "A GLenum specifying how source and destination colors are combined. Must be either: gl.FUNC_ADD: source + destination, gl.FUNC_SUBTRACT: source - destination, gl.FUNC_REVERSE_SUBTRACT: destination - source When using the EXT_blend_minmax extension: ext.MIN_EXT: Minimum of source and destination, ext.MAX_EXT: Maximum of source and destination. When using a WebGL 2 context, the following values are available additionally: gl.MIN: Minimum of source and destination, gl.MAX: Maximum of source and destination. default value: gl.FUNC_ADD "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendEquation"
 }, {
     "name": "blendEquationSeparate",
@@ -129,6 +140,7 @@
         "desc": "A GLenum specifying how the alpha component (transparency) of source and destination colors are combined. Must be either: gl.FUNC_ADD: source + destination (default value), gl.FUNC_SUBTRACT: source - destination, gl.FUNC_REVERSE_SUBTRACT: destination - source, When using the EXT_blend_minmax extension: ext.MIN_EXT: Minimum of source and destination, ext.MAX_EXT: Maximum of source and destination. When using a WebGL 2 context, the following values are available additionally: gl.MIN: Minimum of source and destination, gl.MAX: Maximum of source and destination. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendEquationSeparate"
 }, {
     "name": "blendFunc",
@@ -142,6 +154,7 @@
         "desc": "A GLenum specifying a multiplier for the destination blending factors. The default value is gl.ZERO. For possible values, see below."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendFunc"
 }, {
     "name": "blendFuncSeparate",
@@ -161,6 +174,7 @@
         "desc": "A GLenum specifying a multiplier for the alpha destination blending factor. The default value is gl.ZERO. For possible values, see below."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/blendFuncSeparate"
 }, {
     "name": "clearColor",
@@ -180,6 +194,7 @@
         "desc": "A GLclampf specifying the alpha (transparency) value used when the color buffers are cleared. Default value: 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearColor"
 }, {
     "name": "clearDepth",
@@ -190,6 +205,7 @@
         "desc": "A GLclampf specifying the depth value used when the depth buffer is cleared. Default value: 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearDepth"
 }, {
     "name": "clearStencil",
@@ -200,6 +216,7 @@
         "desc": "A GLint specifying the index used when the stencil buffer is cleared. Default value: 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clearStencil"
 }, {
     "name": "colorMask",
@@ -219,6 +236,7 @@
         "desc": "A GLboolean specifying whether or not the alpha (transparency) component can be written into the frame buffer. Default value: true."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/colorMask"
 }, {
     "name": "cullFace",
@@ -229,6 +247,7 @@
         "desc": "A GLenum specifying whether front- or back-facing polygons are candidates for culling. The default value is gl.BACK. Possible values are: gl.FRONT gl.BACK gl.FRONT_AND_BACK "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/cullFace"
 }, {
     "name": "depthFunc",
@@ -239,6 +258,7 @@
         "desc": "A GLenum specifying the depth comparison function, which sets the conditions under which the pixel will be drawn. The default value is gl.LESS. Possible values are: gl.NEVER (never pass) gl.LESS (pass if the incoming value is less than the depth buffer value) gl.EQUAL (pass if the incoming value equals the the depth buffer value) gl.LEQUAL (pass if the incoming value is less than or equal to the depth buffer value) gl.GREATER (pass if the incoming value is greater than the depth buffer value) gl.NOTEQUAL (pass if the incoming value is not equal to the depth buffer value) gl.GEQUAL (pass if the incoming value is greater than or equal to the depth buffer value) gl.ALWAYS (always pass) "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthFunc"
 }, {
     "name": "depthMask",
@@ -249,6 +269,7 @@
         "desc": "A GLboolean specifying whether or not writing into the depth buffer is enabled. Default value: true, meaning that writing is enabled."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthMask"
 }, {
     "name": "depthRange",
@@ -262,6 +283,7 @@
         "desc": "A GLclampf specifying the mapping of the far clipping plane to window or viewport coordinates. Clamped to the range 0 to 1. The default value is 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/depthRange"
 }, {
     "name": "disable",
@@ -272,6 +294,7 @@
         "desc": "A GLenum specifying which WebGL capability to disable. Possible values:"
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/disable"
 }, {
     "name": "enable",
@@ -282,6 +305,7 @@
         "desc": "A GLenum specifying which WebGL capability to enable. Possible values:"
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/enable"
 }, {
     "name": "frontFace",
@@ -292,6 +316,7 @@
         "desc": "A GLenum type winding orientation. The default value is gl.CCW. Possible values: gl.CW: Clock-wise winding. gl.CCW: Counter-clock-wise winding. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/frontFace"
 }, {
     "name": "getParameter",
@@ -302,6 +327,7 @@
         "desc": "A GLenum specifying which parameter value to return. See below for possible values."
     }],
     "returnVal": "Depends on the parameter.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getParameter"
 }, {
     "name": "getError",
@@ -309,6 +335,7 @@
     "syntax": "GLenum gl.getError();\n",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getError"
 }, {
     "name": "hint",
@@ -322,6 +349,7 @@
         "desc": "Sets the behavior. The default value is gl.DONT_CARE. The possible values are: gl.FASTEST: The most efficient behavior should be used. gl.NICEST: The most correct or the highest quality option should be used. gl.DONT_CARE: There is no preference for this behavior. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/hint"
 }, {
     "name": "isEnabled",
@@ -332,6 +360,7 @@
         "desc": "A GLenum specifying which WebGL capability to test. Possible values:"
     }],
     "returnVal": "A GLboolean indicating if the capability cap is enabled (true), or not (false).",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isEnabled"
 }, {
     "name": "lineWidth",
@@ -342,6 +371,7 @@
         "desc": "A GLfloat specifying the width of rasterized lines. Default value: 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/lineWidth"
 }, {
     "name": "pixelStorei",
@@ -355,6 +385,7 @@
         "desc": "A GLint specifying a value to set the pname parameter to. See below for possible values."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/pixelStorei"
 }, {
     "name": "polygonOffset",
@@ -368,6 +399,7 @@
         "desc": "A GLfloat which sets the multiplier by which an implementation-specific value is multiplied with to create a constant depth offset. The default value is 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/polygonOffset"
 }, {
     "name": "sampleCoverage",
@@ -381,6 +413,7 @@
         "desc": "A GLboolean which sets whether or not the coverage masks should be inverted. The default value is false."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/sampleCoverage"
 }, {
     "name": "stencilFunc",
@@ -397,6 +430,7 @@
         "desc": "A GLuint specifying a bit-wise mask that is used to AND the reference value and the stored stencil value when the test is done. The default value is all 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilFunc"
 }, {
     "name": "stencilFuncSeparate",
@@ -416,6 +450,7 @@
         "desc": "A GLuint specifying a bit-wise mask that is used to AND the reference value and the stored stencil value when the test is done. The default value is all 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate"
 }, {
     "name": "stencilMask",
@@ -426,6 +461,7 @@
         "desc": "A GLuint specifying a bit mask to enable or disable writing of individual bits in the stencil planes. By default, the mask is all 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilMask"
 }, {
     "name": "stencilMaskSeparate",
@@ -439,6 +475,7 @@
         "desc": "A GLuint specifying a bit mask to enable or disable writing of individual bits in the stencil planes. By default, the mask is all 1."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate"
 }, {
     "name": "stencilOp",
@@ -446,6 +483,7 @@
     "syntax": "void gl.stencilOp(fail, zfail, zpass);\n",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilOp"
 }, {
     "name": "stencilOpSeparate",
@@ -453,6 +491,7 @@
     "syntax": "void gl.stencilOpSeparate(face, fail, zfail, zpass);\n",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/stencilOpSeparate"
 }, {
     "name": "bindBuffer",
@@ -466,6 +505,7 @@
         "desc": "A WebGLBuffer to bind."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindBuffer"
 }, {
     "name": "bufferData",
@@ -491,6 +531,7 @@
         "desc": "A GLuint defaulting to 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferData"
 }, {
     "name": "bufferSubData",
@@ -513,6 +554,7 @@
         "desc": "A GLuint defaulting to 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData"
 }, {
     "name": "createBuffer",
@@ -520,6 +562,7 @@
     "syntax": "WebGLBuffer gl.createBuffer();\n",
     "params": [],
     "returnVal": "A WebGLBuffer storing data such as vertices or colors.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer"
 }, {
     "name": "deleteBuffer",
@@ -530,6 +573,7 @@
         "desc": "A WebGLBuffer object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteBuffer"
 }, {
     "name": "getBufferParameter",
@@ -543,6 +587,7 @@
         "desc": "A Glenum specifying information to query. Possible values: gl.BUFFER_SIZE: Returns a GLint indicating the size of the buffer in bytes. gl.BUFFER_USAGE: Returns a GLenum indicating the usage pattern of the buffer. This is either: gl.STATIC_DRAW, gl.DYNAMIC_DRAW, gl.STREAM_DRAW. When using a WebGL 2 context, the following values are available additionally: gl.STATIC_READ, gl.DYNAMIC_READ, gl.STREAM_READ, gl.STATIC_COPY, gl.DYNAMIC_COPY, gl.STREAM_COPY. "
     }],
     "returnVal": "Depends on the requested information (as specified with pname). Either a GLint or a GLenum.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getBufferParameter"
 }, {
     "name": "isBuffer",
@@ -553,6 +598,7 @@
         "desc": "A WebGLBuffer to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the buffer is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isBuffer"
 }, {
     "name": "bindFramebuffer",
@@ -566,6 +612,7 @@
         "desc": "A WebGLFramebuffer object to bind."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer"
 }, {
     "name": "checkFramebufferStatus",
@@ -576,6 +623,7 @@
         "desc": "A GLenum specifying the binding point (target). Possible values: gl.FRAMEBUFFER: Collection buffer data storage of color, alpha, depth and stencil buffers used to render an image. When using a WebGL 2 context, the following values are available additionally: gl.DRAW_FRAMEBUFFER: Equivalent to gl.FRAMEBUFFER. Used as a destination for drawing, rendering, clearing, and writing operations. gl.READ_FRAMEBUFFER: Used as a source for reading operations. "
     }],
     "returnVal": "A GLenum indicating the completeness status of the framebuffer or 0 if an error occurs. Possible enum return values:",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus"
 }, {
     "name": "createFramebuffer",
@@ -583,6 +631,7 @@
     "syntax": "WebGLFramebuffer gl.createFramebuffer();\n",
     "params": [],
     "returnVal": "A WebGLFramebuffer object.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createFramebuffer"
 }, {
     "name": "deleteFramebuffer",
@@ -593,6 +642,7 @@
         "desc": "A WebGLFramebuffer object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteFramebuffer"
 }, {
     "name": "framebufferRenderbuffer",
@@ -612,6 +662,7 @@
         "desc": "A WebGLRenderbuffer object to attach."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer"
 }, {
     "name": "framebufferTexture2D",
@@ -634,6 +685,7 @@
         "desc": "A GLint specifying the mipmap level of the texture image to be attached. Must be 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/framebufferTexture2D"
 }, {
     "name": "getFramebufferAttachmentParameter",
@@ -650,6 +702,7 @@
         "desc": "A GLenum specifying information to query. Possible values: gl.FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE: The type which contains the attached image. gl.FRAMEBUFFER_ATTACHMENT_OBJECT_NAME: The texture or renderbuffer of the attached image (WebGLRenderbuffer or WebGLTexture). gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: Mipmap level. Default value: 0. gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: The name of cube-map face of the texture. When using the EXT_sRGB extension: ext.FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: The framebuffer color encoding. When using a WebGL 2 context, the following values are available additionally: gl.FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE gl.FRAMEBUFFER_ATTACHMENT_BLUE_SIZE gl.FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING gl.FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE gl.FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE gl.FRAMEBUFFER_ATTACHMENT_GREEN_SIZE gl.FRAMEBUFFER_ATTACHMENT_RED_SIZE gl.FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER "
     }],
     "returnVal": "Depends on the requested information (as specified with pname). Either a GLint, a GLenum, a WebGLRenderbuffer, or a WebGLTexture.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter"
 }, {
     "name": "isFramebuffer",
@@ -660,6 +713,7 @@
         "desc": "A WebGLFramebuffer to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the frame buffer is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isFramebuffer"
 }, {
     "name": "readPixels",
@@ -691,6 +745,7 @@
         "desc": "Offset. Defaults to 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/readPixels"
 }, {
     "name": "bindRenderbuffer",
@@ -704,6 +759,7 @@
         "desc": "A WebGLRenderbuffer object to bind."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindRenderbuffer"
 }, {
     "name": "createRenderbuffer",
@@ -711,6 +767,7 @@
     "syntax": "WebGLRenderbuffer gl.createRenderbuffer();\n",
     "params": [],
     "returnVal": "A WebGLRenderbuffer object that stores data such an image, or can be source or target of an rendering operation.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createRenderbuffer"
 }, {
     "name": "deleteRenderbuffer",
@@ -721,6 +778,7 @@
         "desc": "A WebGLRenderbuffer object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer"
 }, {
     "name": "getRenderbufferParameter",
@@ -734,6 +792,7 @@
         "desc": "A Glenum specifying the information to query. Possible values: gl.RENDERBUFFER_WIDTH: Returns a GLint indicating the width of the image of the currently bound renderbuffer. gl.RENDERBUFFER_HEIGHT: Returns a GLint indicating the height of the image of the currently bound renderbuffer. gl.RENDERBUFFER_INTERNAL_FORMAT: Returns a GLenum indicating the internal format of the currently bound renderbuffer. The default is gl.RGBA4. Possible return values: gl.RGBA4: 4 red bits, 4 green bits, 4 blue bits 4 alpha bits. gl.RGB565: 5 red bits, 6 green bits, 5 blue bits. gl.RGB5_A1: 5 red bits, 5 green bits, 5 blue bits, 1 alpha bit. gl.DEPTH_COMPONENT16: 16 depth bits. gl.STENCIL_INDEX8: 8 stencil bits. gl.RENDERBUFFER_GREEN_SIZE: Returns a GLint that is the resolution size (in bits) for the green color. gl.RENDERBUFFER_BLUE_SIZE: Returns a GLint that is the resolution size (in bits) for the blue color. gl.RENDERBUFFER_RED_SIZE: Returns a GLint that is the resolution size (in bits) for the red color. gl.RENDERBUFFER_ALPHA_SIZE: Returns a GLint that is the resolution size (in bits) for the alpha component. gl.RENDERBUFFER_DEPTH_SIZE: Returns a GLint that is the resolution size (in bits) for the depth component. gl.RENDERBUFFER_STENCIL_SIZE: Returns a GLint that is the resolution size (in bits) for the stencil component. When using a WebGL 2 context, the following value is available additionally: gl.RENDERBUFFER_SAMPLES: Returns a GLint indicating the number of samples of the image of the currently bound renderbuffer. "
     }],
     "returnVal": "Depends on the requested information (as specified with pname). Either a GLint or a GLenum.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter"
 }, {
     "name": "isRenderbuffer",
@@ -744,6 +803,7 @@
         "desc": "A WebGLRenderbuffer to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the renderbuffer is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isRenderbuffer"
 }, {
     "name": "renderbufferStorage",
@@ -763,6 +823,7 @@
         "desc": "A GLsizei specifying the height of the renderbuffer in pixels."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/renderbufferStorage"
 }, {
     "name": "bindTexture",
@@ -776,6 +837,7 @@
         "desc": "A WebGLTexture object to bind."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindTexture"
 }, {
     "name": "compressedTexImage2D",
@@ -813,6 +875,7 @@
         "desc": "An ArrayBufferView that be used as a data store for the compressed image data in memory."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexImage2D"
 }, {
     "name": "compressedTexSubImage2D",
@@ -850,6 +913,7 @@
         "desc": "An ArrayBufferView that be used as a data store for the compressed image data in memory."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D"
 }, {
     "name": "copyTexImage2D",
@@ -881,6 +945,7 @@
         "desc": "A GLint specifying the width of the border. Must be 0."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/copyTexImage2D"
 }, {
     "name": "copyTexSubImage2D",
@@ -912,6 +977,7 @@
         "desc": "A GLsizei specifying the height of the texture."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D"
 }, {
     "name": "createTexture",
@@ -919,6 +985,7 @@
     "syntax": "WebGLTexture gl.createTexture();\n",
     "params": [],
     "returnVal": "A WebGLTexture object to which images can be bound to.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createTexture"
 }, {
     "name": "deleteTexture",
@@ -929,6 +996,7 @@
         "desc": "A WebGLTexture object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteTexture"
 }, {
     "name": "generateMipmap",
@@ -939,6 +1007,7 @@
         "desc": "A GLenum specifying the binding point (target) of the active texture whose mipmaps will be generated. Possible values: gl.TEXTURE_2D: A two-dimensional texture. gl.TEXTURE_CUBE_MAP: A cube-mapped texture. When using a WebGL 2 context, the following values are available additionally: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/generateMipmap"
 }, {
     "name": "getTexParameter",
@@ -952,6 +1021,7 @@
         "desc": "A Glenum specifying the information to query. Possible values: pname Return type Description Possible return values Available in a WebGL 1 context gl.TEXTURE_MAG_FILTER GLenum Texture magnification filter gl.LINEAR (default value), gl.NEAREST. gl.TEXTURE_MIN_FILTER GLenum Texture minification filter gl.LINEAR, gl.NEAREST, gl.NEAREST_MIPMAP_NEAREST, gl.LINEAR_MIPMAP_NEAREST, gl.NEAREST_MIPMAP_LINEAR (default value), gl.LINEAR_MIPMAP_LINEAR. gl.TEXTURE_WRAP_S GLenum Wrapping function for texture coordinate s gl.REPEAT (default value), gl.CLAMP_TO_EDGE, gl.MIRRORED_REPEAT. gl.TEXTURE_WRAP_T GLenum Wrapping function for texture coordinate t gl.REPEAT (default value), gl.CLAMP_TO_EDGE, gl.MIRRORED_REPEAT. Additionally available when using the EXT_texture_filter_anisotropic extension ext.TEXTURE_MAX_ANISOTROPY_EXT GLfloat Maximum anisotropy for a texture Any float values. Additionally available when using a WebGL 2 context gl.TEXTURE_BASE_LEVEL GLint Texture mipmap level Any int values. gl.TEXTURE_COMPARE_FUNC GLenum Comparison function gl.LEQUAL (default value), gl.GEQUAL, gl.LESS, gl.GREATER, gl.EQUAL, gl.NOTEQUAL, gl.ALWAYS, gl.NEVER. gl.TEXTURE_COMPARE_MODE GLenum Texture comparison mode gl.NONE (default value), gl.COMPARE_REF_TO_TEXTURE. gl.TEXTURE_IMMUTABLE_FORMAT GLboolean Immutability of the texture format and size true or false. gl.TEXTURE_IMMUTABLE_LEVELS GLuint ? Any uint values. gl.TEXTURE_MAX_LEVEL GLint Maximum texture mipmap array level Any int values. gl.TEXTURE_MAX_LOD GLfloat Texture maximum level-of-detail value Any float values. gl.TEXTURE_MIN_LOD GLfloat Texture minimum level-of-detail value Any float values. gl.TEXTURE_WRAP_R GLenum Wrapping function for texture coordinate r gl.REPEAT (default value), gl.CLAMP_TO_EDGE, gl.MIRRORED_REPEAT. "
     }],
     "returnVal": "Returns the requested texture information (as specified with pname). If an error occurs, null is returned.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getTexParameter"
 }, {
     "name": "isTexture",
@@ -962,6 +1032,7 @@
         "desc": "A WebGLTexture to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the texture is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isTexture"
 }, {
     "name": "texImage2D",
@@ -981,6 +1052,7 @@
         "desc": "Possible values in both WebGL1 and WebGL2"
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texImage2D"
 }, {
     "name": "texSubImage2D",
@@ -1018,6 +1090,7 @@
         "desc": "(WebGL 2 only) A GLintptr byte offset into the WebGLBuffer's data store. Used to upload data to the currently bound WebGLTexture from the WebGLBuffer bound to the PIXEL_UNPACK_BUFFER target."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D"
 }, {
     "name": "texParameter",
@@ -1028,6 +1101,7 @@
         "desc": "A GLenum specifying the binding point (target). Possible values: gl.TEXTURE_2D: A two-dimensional texture. gl.TEXTURE_CUBE_MAP: A cube-mapped texture. When using a WebGL 2 context, the following values are available additionally: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texParameter"
 }, {
     "name": "texParameter",
@@ -1038,6 +1112,7 @@
         "desc": "A GLenum specifying the binding point (target). Possible values: gl.TEXTURE_2D: A two-dimensional texture. gl.TEXTURE_CUBE_MAP: A cube-mapped texture. When using a WebGL 2 context, the following values are available additionally: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texParameter"
 }, {
     "name": "attachShader",
@@ -1051,6 +1126,7 @@
         "desc": "A fragment or vertex WebGLShader."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/attachShader"
 }, {
     "name": "bindAttribLocation",
@@ -1067,6 +1143,7 @@
         "desc": "A DOMString specifying the name of the variable to bind to the generic vertex index. This name cannot start with \"webgl_\" or \"_webgl_\", as these are reserved for use by WebGL."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindAttribLocation"
 }, {
     "name": "compileShader",
@@ -1077,6 +1154,7 @@
         "desc": "A fragment or vertex WebGLShader."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/compileShader"
 }, {
     "name": "createProgram",
@@ -1084,6 +1162,7 @@
     "syntax": "WebGLProgram gl.createProgram();\n",
     "params": [],
     "returnVal": "A WebGLProgram object that is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). These are then linked into a usable program..",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createProgram"
 }, {
     "name": "createShader",
@@ -1094,6 +1173,7 @@
         "desc": "Either gl.VERTEX_SHADER or gl.FRAGMENT_SHADER"
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createShader"
 }, {
     "name": "deleteProgram",
@@ -1104,6 +1184,7 @@
         "desc": "A WebGLProgram object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteProgram"
 }, {
     "name": "deleteShader",
@@ -1114,6 +1195,7 @@
         "desc": "A WebGLShader object to delete."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteShader"
 }, {
     "name": "detachShader",
@@ -1127,6 +1209,7 @@
         "desc": "A fragment or vertex WebGLShader."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/detachShader"
 }, {
     "name": "getAttachedShaders",
@@ -1137,6 +1220,7 @@
         "desc": "A WebGLProgram object to get attached shaders for."
     }],
     "returnVal": "An Array of WebGLShader objects that are attached to the given WebGLProgram.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getAttachedShaders"
 }, {
     "name": "getProgramParameter",
@@ -1150,6 +1234,7 @@
         "desc": "A Glenum specifying the information to query. Possible values: gl.DELETE_STATUS: Returns a GLboolean indicating whether or not the program is flagged for deletion. gl.LINK_STATUS: Returns a GLboolean indicating whether or not the last link operation was successful. gl.VALIDATE_STATUS: Returns a GLboolean indicating whether or not the last validation operation was successful. gl.ATTACHED_SHADERS: Returns a GLint indicating the number of attached shaders to a program. gl.ACTIVE_ATTRIBUTES: Returns a GLint indicating the number of active attribute variables to a program. gl.ACTIVE_UNIFORMS: Returns a GLint indicating the number of active uniform variables to a program. When using a WebGL 2 context, the following values are available additionally: gl.TRANSFORM_FEEDBACK_BUFFER_MODE: Returns a GLenum indicating the buffer mode when transform feedback is active. May be gl.SEPARATE_ATTRIBS or gl.INTERLEAVED_ATTRIBS. gl.TRANSFORM_FEEDBACK_VARYINGS: Returns a GLint indicating the number of varying variables to capture in transform feedback mode. gl.ACTIVE_UNIFORM_BLOCKS: Returns a GLint indicating the number of uniform blocks containing active uniforms. "
     }],
     "returnVal": "Returns the requested program information (as specified with pname).",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getProgramParameter"
 }, {
     "name": "getProgramInfoLog",
@@ -1160,6 +1245,7 @@
         "desc": "A WebGLProgram to query."
     }],
     "returnVal": "A DOMString that contains diagnostic messages, warning messages, and other information about the last linking or validation operation. When a WebGLProgram object is initially created, its information log will be a string of length 0.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getProgramInfoLog"
 }, {
     "name": "getShaderParameter",
@@ -1173,6 +1259,7 @@
         "desc": "A Glenum specifying the information to query. Possible values: gl.DELETE_STATUS: Returns a GLboolean indicating whether or not the shader is flagged for deletion. gl.COMPILE_STATUS: Returns a GLboolean indicating whether or not the last shader compilation was successful. gl.SHADER_TYPE: Returns a GLenum indicating whether the shader is a vertex shader (gl.VERTEX_SHADER) or fragment shader (gl.FRAGMENT_SHADER) object. "
     }],
     "returnVal": "Returns the requested shader information (as specified with pname).",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderParameter"
 }, {
     "name": "getShaderPrecisionFormat",
@@ -1186,6 +1273,7 @@
         "desc": "A precision type value. Either gl.LOW_FLOAT, gl.MEDIUM_FLOAT, gl.HIGH_FLOAT, gl.LOW_INT, gl.MEDIUM_INT, or gl.HIGH_INT."
     }],
     "returnVal": "A WebGLShaderPrecisionFormat object or null, if an error occurs.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat"
 }, {
     "name": "getShaderInfoLog",
@@ -1196,6 +1284,7 @@
         "desc": "A WebGLShader to query."
     }],
     "returnVal": "A DOMString that contains diagnostic messages, warning messages, and other information about the last compile operation. When a WebGLShader object is initially created, its information log will be a string of length 0.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderInfoLog"
 }, {
     "name": "getShaderSource",
@@ -1206,6 +1295,7 @@
         "desc": "A WebGLShader object to get the source code from."
     }],
     "returnVal": "A DOMString containing the source code of the shader.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getShaderSource"
 }, {
     "name": "isProgram",
@@ -1216,6 +1306,7 @@
         "desc": "A WebGLProgram to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the program is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isProgram"
 }, {
     "name": "isShader",
@@ -1226,6 +1317,7 @@
         "desc": "A WebGLShader to check."
     }],
     "returnVal": "A GLboolean indicating whether or not the shader is valid.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isShader"
 }, {
     "name": "linkProgram",
@@ -1236,6 +1328,7 @@
         "desc": "A WebGLProgram to link."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/linkProgram"
 }, {
     "name": "shaderSource",
@@ -1249,6 +1342,7 @@
         "desc": "A DOMString containing the GLSL source code to set."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/shaderSource"
 }, {
     "name": "useProgram",
@@ -1259,6 +1353,7 @@
         "desc": "A WebGLProgram to use."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/useProgram"
 }, {
     "name": "validateProgram",
@@ -1269,6 +1364,7 @@
         "desc": "A WebGLProgram to validate."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/validateProgram"
 }, {
     "name": "disableVertexAttribArray",
@@ -1279,6 +1375,7 @@
         "desc": "A GLuint specifying the index of the vertex attribute to disable."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray"
 }, {
     "name": "enableVertexAttribArray",
@@ -1289,6 +1386,7 @@
         "desc": "A GLuint specifying the index number that uniquely identifies the vertex attribute to enable. If you know the name of the attribute but not its index, you can get the index by calling getAttribLocation()."
     }],
     "returnVal": "undefined.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray"
 }, {
     "name": "getActiveAttrib",
@@ -1302,6 +1400,7 @@
         "desc": "A GLuint specifying the index of the vertex attribute to get. This value is an index 0 to N - 1 as returned by gl.getProgramParameter(program, gl.ACTIVE_ATTRIBUTES)."
     }],
     "returnVal": "A WebGLActiveInfo object.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveAttrib"
 }, {
     "name": "getActiveUniform",
@@ -1315,6 +1414,7 @@
         "desc": "A GLuint specifying the index of the uniform attribute to get. This value is an index 0 to N - 1 as returned by gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS)."
     }],
     "returnVal": "A WebGLActiveInfo object describing the uniform.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform"
 }, {
     "name": "getAttribLocation",
@@ -1328,6 +1428,7 @@
         "desc": "A DOMString specifying the name of the attribute variable whose location to get."
     }],
     "returnVal": "A GLint number indicating the location of the variable name if found. Returns -1 otherwise.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getAttribLocation"
 }, {
     "name": "getUniform",
@@ -1341,6 +1442,7 @@
         "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to get."
     }],
     "returnVal": "The returned type depends on the uniform type:",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getUniform"
 }, {
     "name": "getUniformLocation",
@@ -1354,6 +1456,7 @@
         "desc": "A DOMString specifying the name of the uniform variable whose location is to be returned. The name can't have any whitespace in it, and you can't use this function to get the location of any uniforms starting with the reserved string \"gl_\", since those are internal to the WebGL layer. The possible values correspond to the uniform names returned by getActiveUniform; see that function for specifics on how declared uniforms map to uniform location names. Additionally, for uniforms declared as arrays, the following names are also valid: The uniform name without the [0] suffix. E.g. the location returned for arrayUniform is equivalent to the one for arrayUniform[0]. The uniform name indexed with an integer. E.g. the location returned for arrayUniform[2] would point directly to the third entry of the arrayUniform uniform. "
     }],
     "returnVal": "A WebGLUniformLocation value indicating the location of the named variable, if it exists. If the specified variable doesn't exist, null is returned instead.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getUniformLocation"
 }, {
     "name": "getVertexAttrib",
@@ -1367,6 +1470,7 @@
         "desc": "A GLenum specifying the information to query. Possible values: gl.VERTEX_ATTRIB_ARRAY_BUFFER_BINDING: Returns the currently bound WebGLBuffer. gl.VERTEX_ATTRIB_ARRAY_ENABLED: Returns a GLboolean that is true if the vertex attribute is enabled at this index. Otherwise false. gl.VERTEX_ATTRIB_ARRAY_SIZE: Returns a GLint indicating the size of an element of the vertex array. gl.VERTEX_ATTRIB_ARRAY_STRIDE: Returns a GLint indicating the number of bytes between successive elements in the array. 0 means that the elements are sequential. gl.VERTEX_ATTRIB_ARRAY_TYPE: Returns a GLenum representing the array type. One of gl.BYTE, gl.UNSIGNED_BYTE, gl.SHORT, gl.UNSIGNED_SHORT, gl.FLOAT. gl.VERTEX_ATTRIB_ARRAY_NORMALIZED: Returns a GLboolean that is true if fixed-point data types are normalized for the vertex attribute array at the given index. gl.CURRENT_VERTEX_ATTRIB: Returns a Float32Array (with 4 elements) representing the current value of the vertex attribute at the given index. When using a WebGL 2 context, the following values are available additionally: gl.VERTEX_ATTRIB_ARRAY_INTEGER: Returns a GLboolean indicating whether or not an integer data type is in the vertex attribute array at the given index. gl.VERTEX_ATTRIB_ARRAY_DIVISOR: Returns a GLint describing the frequency divisor used for instanced rendering. When using the ANGLE_instanced_arrays extension: ext.VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Returns a GLint describing the frequency divisor used for instanced rendering. "
     }],
     "returnVal": "Returns the requested vertex attribute information (as specified with pname).",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getVertexAttrib"
 }, {
     "name": "getVertexAttribOffset",
@@ -1380,6 +1484,7 @@
         "desc": "A GLenum which must be gl.VERTEX_ATTRIB_ARRAY_POINTER."
     }],
     "returnVal": "A GLintptr indicating the address of the vertex attribute.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset"
 }, {
     "name": "uniform",
@@ -1393,6 +1498,7 @@
         "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniform"
 }, {
     "name": "uniformMatrix",
@@ -1409,6 +1515,7 @@
         "desc": " A Float32Array or sequence of GLfloat values. "
     }],
     "returnVal": "undefined",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix"
 }, {
     "name": "vertexAttrib",
@@ -1425,6 +1532,7 @@
         "desc": " A Float32Array for floating point vector vertex attribute values. "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttrib"
 }, {
     "name": "vertexAttribPointer",
@@ -1450,6 +1558,7 @@
         "desc": "A GLintptr specifying an offset in bytes of the first component in the vertex attribute array. Must be a multiple of the byte length of type."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer"
 }, {
     "name": "clear",
@@ -1460,6 +1569,7 @@
         "desc": "A GLbitfield bitwise OR mask that indicates the buffers to be cleared. Possible values are: gl.COLOR_BUFFER_BIT gl.DEPTH_BUFFER_BIT gl.STENCIL_BUFFER_BIT "
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear"
 }, {
     "name": "drawArrays",
@@ -1476,6 +1586,7 @@
         "desc": "A GLsizei specifying the number of indices to be rendered."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawArrays"
 }, {
     "name": "drawElements",
@@ -1495,6 +1606,7 @@
         "desc": "A GLintptr specifying a byte offset in the element array buffer. Must be a valid multiple of the size of the given type."
     }],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements"
 }, {
     "name": "finish",
@@ -1502,6 +1614,7 @@
     "syntax": "void gl.finish();\n",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/finish"
 }, {
     "name": "flush",
@@ -1509,6 +1622,7 @@
     "syntax": "void gl.flush();\n",
     "params": [],
     "returnVal": "None.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/flush"
 }, {
     "name": "getSupportedExtensions",
@@ -1516,6 +1630,7 @@
     "syntax": "gl.getSupportedExtensions();",
     "params": [],
     "returnVal": "An Array of strings with all the supported WebGL extensions.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getSupportedExtensions"
 }, {
     "name": "getExtension",
@@ -1526,5 +1641,6 @@
         "desc": "A String for the name of the WebGL extension to enable."
     }],
     "returnVal": "A WebGL extension object, or null if name does not match (case-insensitive) to one of the strings in WebGLRenderingContext.getSupportedExtensions.",
+    "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getExtension"
 }]
