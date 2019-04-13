@@ -1,5 +1,5 @@
 import { HoverProvider, TextDocument, Position, CancellationToken, Hover, MarkdownString } from 'vscode';
-import { getProp, getAttrComponent, getConstantComponent, swapAttrComponentMarkDown, swapConstantComponentMarkDown } from '../helpers/utils';
+import { getProp, getAttrComponent, getConstantComponent, swapAttrComponentMarkDown, swapConstantComponentMarkDown } from '../utils';
 import { Attr } from '../helpers/attr';
 import { Constant } from '../helpers/constant';
 export default class HoverProviderPlugin implements HoverProvider {
