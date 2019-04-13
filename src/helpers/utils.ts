@@ -1,4 +1,4 @@
-import { TextDocument, Position, MarkdownString, CompletionItem } from 'vscode';
+import { TextDocument, Position, MarkdownString, CompletionItem, SnippetString } from 'vscode';
 import { Prop } from './prop';
 import { Attr } from './attr';
 import { Constant } from './constant';
@@ -165,6 +165,17 @@ export function createCompleteItems(reg:RegExp):Array<CompletionItem> {
  * @return {CompletionItem}
  */
 function createFunCompleteItem(attr:Attr):CompletionItem {
-    //TODO:增加函数参数的提示和填写
-    return new CompletionItem('123');
+    const { params, name } = attr;
+    const comp = new CompletionItem(name);
+    if (params.length > 0) {
+        let snippetStr = name + '(';
+        params.forEach((param, index) => {
+            snippetStr += '${' + (index + 1) + ':' + param.paramName + '}, ';
+        });
+        snippetStr = snippetStr.substring(0, snippetStr.length - 2);
+        snippetStr += ')';
+        const snippet = new SnippetString(snippetStr);
+        comp.insertText = snippet;
+    }
+    return comp;
 }
