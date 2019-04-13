@@ -1,4 +1,4 @@
-import { TextDocument, Position, MarkdownString, CompletionItem, SnippetString } from 'vscode';
+import { TextDocument, Position, MarkdownString, CompletionItem, SnippetString, Range } from 'vscode';
 import { Prop } from './helpers/prop';
 import { Attr } from './helpers/attr';
 import { Constant } from './helpers/constant';
@@ -190,6 +190,8 @@ function createShaderSourceCompleteItem(shader:any, pos: Position):CompletionIte
     const { name, value } = shader;
     const comp = new CompletionItem(name, 0);
     const snippet = new SnippetString('\n' + value + '\n');
+    // const range = new Range(pos.line, pos.character - name.length - 20, pos.line, pos.character);
     comp.insertText = snippet;
+    // comp.range = range;
     return comp;
 }
