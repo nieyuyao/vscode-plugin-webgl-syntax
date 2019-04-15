@@ -1487,23 +1487,609 @@
     "type": "function",
     "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset"
 }, {
-    "name": "uniform",
-    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "name": "uniform1f",
     "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
     "params": [{
         "paramName": "location",
         "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
     }, {
-        "paramName": "value, v0, v1, v2, v3",
+        "paramName": "v0",
         "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
     }],
-    "returnVal": "None.",
-    "type": "function",
-    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniform"
+    "returnVal": "None."
 }, {
-    "name": "uniformMatrix",
-    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "name": "uniform1f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform4f",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform4i",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "v0",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v1",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v2",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }, {
+        "paramName": "v3",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform4iv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform1fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform2fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform3fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniform4fv",
+    "syntax": "void gl.uniform1f(location, v0);\nvoid gl.uniform1fv(location, value);\nvoid gl.uniform1i(location, v0);\nvoid gl.uniform1iv(location, value);\n\nvoid gl.uniform2f(location, v0, v1);\nvoid gl.uniform2fv(location, value);\nvoid gl.uniform2i(location, v0, v1);\nvoid gl.uniform2iv(location, value);\n\nvoid gl.uniform3f(location, v0, v1, v2);\nvoid gl.uniform3fv(location, value);\nvoid gl.uniform3i(location, v0, v1, v2);\nvoid gl.uniform3iv(location, value);\n\nvoid gl.uniform4f(location, v0, v1, v2, v3);\nvoid gl.uniform4fv(location, value);\nvoid gl.uniform4i(location, v0, v1, v2, v3);\nvoid gl.uniform4iv(location, value);\n",
+    "desc": "The WebGLRenderingContext.uniform[1234][fi][v]() methods of the WebGL API specify values of uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+    }, {
+        "paramName": "value",
+        "desc": "A new value to be used for the uniform variable. Possible types: A floating point Number for floating point values (methods with \"f\"). A sequence of floating point numbers (for example a Float32Array or an Array of numbers) for floating point vector methods (methods with \"fv\"). An integer Number for integer values (methods with \"i\"). An Int32Array for integer vector methods (methods with \"iv\"). "
+    }],
+    "returnVal": "None."
+}, {
+    "name": "uniformMatrix1fv",
     "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
     "params": [{
         "paramName": "location",
         "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
@@ -1514,26 +2100,442 @@
         "paramName": "value",
         "desc": " A Float32Array or sequence of GLfloat values. "
     }],
-    "returnVal": "undefined",
-    "type": "function",
-    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix"
+    "returnVal": "undefined"
 }, {
-    "name": "vertexAttrib",
-    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "name": "uniformMatrix1fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix2fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix1fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix2fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix3fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix1fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix2fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix3fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "uniformMatrix4fv",
+    "syntax": "WebGLRenderingContext.uniformMatrix2fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix3fv(location, transpose, value);\nWebGLRenderingContext.uniformMatrix4fv(location, transpose, value); \n",
+    "desc": "The WebGLRenderingContext.uniformMatrix[234]fv() methods of the WebGL API specify matrix values for uniform variables.",
+    "params": [{
+        "paramName": "location",
+        "desc": "A WebGLUniformLocation object containing the location of the uniform attribute to modify. The location is obtained using getUniformLocation()."
+    }, {
+        "paramName": "transpose",
+        "desc": "A GLboolean specifying whether to transpose the matrix. Must be false."
+    }, {
+        "paramName": "value",
+        "desc": " A Float32Array or sequence of GLfloat values. "
+    }],
+    "returnVal": "undefined"
+}, {
+    "name": "vertexAttrib1f",
     "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
     "params": [{
         "paramName": "index",
         "desc": "A GLuint specifying the position of the vertex attribute to be modified."
     }, {
-        "paramName": "v0, v1, v2, v3",
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
         "desc": "A floating point Number for the vertex attribute value."
     }, {
-        "paramName": "value",
-        "desc": " A Float32Array for floating point vector vertex attribute values. "
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
     }],
-    "returnVal": "None.",
-    "type": "function",
-    "url": "developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttrib"
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib3f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v3",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v3",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib3f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v3",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib4f",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "v0",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v1",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v2",
+        "desc": "A floating point Number for the vertex attribute value."
+    }, {
+        "paramName": "v3",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib3fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib1fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib2fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib3fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
+}, {
+    "name": "vertexAttrib4fv",
+    "syntax": "void gl.vertexAttrib1f(index, v0);\nvoid gl.vertexAttrib2f(index, v0, v1);\nvoid gl.vertexAttrib3f(index, v0, v1, v2);\nvoid gl.vertexAttrib4f(index, v0, v1, v2, v3);\n\nvoid gl.vertexAttrib1fv(index, value);\nvoid gl.vertexAttrib2fv(index, value);\nvoid gl.vertexAttrib3fv(index, value);\nvoid gl.vertexAttrib4fv(index, value);\n",
+    "desc": "The WebGLRenderingContext.vertexAttrib[1234]f[v]() methods of the WebGL API specify constant values for generic vertex attributes.",
+    "params": [{
+        "paramName": "index",
+        "desc": "A GLuint specifying the position of the vertex attribute to be modified."
+    }, {
+        "paramName": "value",
+        "desc": "A floating point Number for the vertex attribute value."
+    }],
+    "returnVal": "None."
 }, {
     "name": "vertexAttribPointer",
     "desc": "The WebGLRenderingContext.vertexAttribPointer() method of the WebGL API binds the buffer currently bound to gl.ARRAY_BUFFER to a generic vertex attribute of the current vertex buffer object and specifies its layout.",
