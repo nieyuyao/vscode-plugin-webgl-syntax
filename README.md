@@ -8,7 +8,7 @@ This is the README for your extension "vscode-plugin-webgl-syntax". After writin
 ![Grammar Hints](https://s.momocdn.com/w/u/others/2019/04/15/1555328828524-vscpde-2.gif)
 
 2. Provide automatic completion of webgl grammar.
-![Grammar Hints](https://s.momocdn.com/w/u/others/2019/04/15/1555328828524-vscpde-1.gif)
+![Grammar Completion](https://s.momocdn.com/w/u/others/2019/04/15/1555328829198-vscode-1.gif)
 
 ***Note***
 
