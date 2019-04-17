@@ -1048,8 +1048,26 @@
         "paramName": "internalformat",
         "desc": "A GLenum specifying the color components in the texture."
     }, {
-        "paramName": "\n \n  \n   \n    Format\n    Type\n    Channels\n    Bytes per pixel\n   \n  \n  \n   \n    RGBA\n    UNSIGNED_BYTE\n    4\n    4\n   \n   \n    RGB\n    UNSIGNED_BYTE\n    3\n    3\n   \n   \n    RGBA\n    UNSIGNED_SHORT_4_4_4_4\n    4\n    2\n   \n   \n    RGBA\n    UNSIGNED_SHORT_5_5_5_1\n    4\n    2\n   \n   \n    RGB\n    UNSIGNED_SHORT_5_6_5\n    3\n    2\n   \n   \n    LUMINANCE_ALPHA\n    UNSIGNED_BYTE\n    2\n    2\n   \n   \n    LUMINANCE\n    UNSIGNED_BYTE\n    1\n    1\n   \n   \n    ALPHA\n    UNSIGNED_BYTE\n    1\n    1\n   \n  \n \n ",
-        "desc": "Possible values in both WebGL1 and WebGL2"
+        "paramName": "width",
+        "desc": "A GLsizei specifying the width of the texture."
+    }, {
+        "paramName": "height",
+        "desc": "A GLsizei specifying the height of the texture."
+    }, {
+        "paramName": "border",
+        "desc": "A GLint specifying the width of the border. Must be 0."
+    }, {
+        "paramName": "format",
+        "desc": "A GLenum specifying the format of the texel data. In WebGL 1, this must be the same as internalformat (see above). in WebGL 2, the combinations are listed in this table."
+    }, {
+        "paramName": "type",
+        "desc": "A GLenum specifying the data type of the texel data. Possible values: gl.UNSIGNED_BYTE: 8 bits per channel for gl.RGBA gl.UNSIGNED_SHORT_5_6_5: 5 red bits, 6 green bits, 5 blue bits. gl.UNSIGNED_SHORT_4_4_4_4: 4 red bits, 4 green bits, 4 blue bits, 4 alpha bits. gl.UNSIGNED_SHORT_5_5_5_1: 5 red bits, 5 green bits, 5 blue bits, 1 alpha bit. When using the WEBGL_depth_texture extension: gl.UNSIGNED_SHORT gl.UNSIGNED_INT ext.UNSIGNED_INT_24_8_WEBGL (constant provided by the extension) When using the OES_texture_float extension: gl.FLOAT When using the OES_texture_half_float extension: ext.HALF_FLOAT_OES (constant provided by the extension) When using a WebGL 2 context, the following values are available additionally: gl.BYTE gl.UNSIGNED_SHORT gl.SHORT gl.UNSIGNED_INT gl.INT gl.HALF_FLOAT gl.FLOAT gl.UNSIGNED_INT_2_10_10_10_REV gl.UNSIGNED_INT_10F_11F_11F_REV gl.UNSIGNED_INT_5_9_9_9_REV gl.UNSIGNED_INT_24_8 gl.FLOAT_32_UNSIGNED_INT_24_8_REV (pixels must be null) "
+    }, {
+        "paramName": "pixels",
+        "desc": "One of the following objects can be used as a pixel source for the texture: ArrayBufferView, A Uint8Array must be used if type is gl.UNSIGNED_BYTE. A Uint16Array must be used if type is either gl.UNSIGNED_SHORT_5_6_5, gl.UNSIGNED_SHORT_4_4_4_4, gl.UNSIGNED_SHORT_5_5_5_1, gl.UNSIGNED_SHORT or ext.HALF_FLOAT_OES. A Uint32Array must be used if type is gl.UNSIGNED_INT or ext.UNSIGNED_INT_24_8_WEBGL. A Float32Array must be used if type is gl.FLOAT. ImageData, HTMLImageElement, HTMLCanvasElement, HTMLVideoElement, ImageBitmap. "
+    }, {
+        "paramName": "offset",
+        "desc": "(WebGL 2 only) A GLintptr byte offset into the WebGLBuffer's data store. Used to upload data to the currently bound WebGLTexture from the WebGLBuffer bound to the PIXEL_UNPACK_BUFFER target."
     }],
     "returnVal": "None.",
     "type": "function",
